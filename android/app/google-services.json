@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588851291104",
+    "project_id": "khudkibook-cb820",
+    "storage_bucket": "khudkibook-cb820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588851291104:android:8b86c7f607f4e17c62c185",
+        "android_client_info": {
+          "package_name": "com.example.khudkibook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588851291104-fembi4daspk1c2jnnan2ilk1l3jgebn2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvxQELLPxndMxB1ZkjNpLe9VMIVJt4DBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588851291104-fembi4daspk1c2jnnan2ilk1l3jgebn2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,148 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Advance Python Programming",
+            "desc": "I.T",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/001.png"
+        },
+        {
+            "id": 2,
+            "name": "Basic Computer Programming",
+            "desc": "Computer",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/002.png"
+        },
+        {
+            "id": 3,
+            "name": "Applied Physics",
+            "desc": "Computer && I.T",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/003.png"
+        },
+        {
+            "id": 4,
+            "name": "Basic of Digital Electronics",
+            "desc": "Computer ",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/004.png"
+        },
+        {
+            "id": 5,
+            "name": "Environment and Sustainability",
+            "desc": "All branch",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/005.png"
+        },
+        {
+            "id": 6,
+            "name": "Indian Constitution",
+            "desc": "All branch",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/006.png"
+        },
+        {
+            "id": 7,
+            "name": "Introduction To IT System",
+            "desc": "I.T",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/007.png"
+        },
+        {
+            "id": 8,
+            "name": "Mathematics",
+            "desc": "Computer && I.T",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+           "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+           "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+           "lpurl":"https://drive.google.com/uc?export=download&id=1YpSYw_7oUvfB-9yraari4-1oIn3aCaTi",
+           "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/008.png"
+        },
+        {
+            "id": 9,
+            "name": "Mathematics (Gujrati)",
+            "desc": "Computer && I.T",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+           "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/009.png"
+        },
+        {
+            "id": 10,
+            "name": "Applied Chemistry (Gujrati)",
+            "desc": "Civil",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/010.png"
+        },
+        {
+            "id": 11,
+            "name": "Applied Mathematics (Gujrati)",
+            "desc": "Civil",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/011.png"
+        },
+        {
+            "id": 12,
+            "name": "Applied Chemistry (Gujrati)",
+            "desc": "Civil",
+            "size": "10mb",
+            "sem":"2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl":"https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl":"https://drive.google.com/uc?export=download&id=",
+            "purl":"https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/012.png"
+        }
+    ]
+}
