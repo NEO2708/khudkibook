@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, sort_child_properties_last, avoid_unnecessary_containers
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last, avoid_unnecessary_containers, unnecessary_new
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:khudkibook/pages/auth_services.dart';
