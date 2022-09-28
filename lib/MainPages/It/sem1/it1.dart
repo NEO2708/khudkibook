@@ -2,14 +2,13 @@
 // ignore_for_file: prefer_const_constructors, avoid_types_as_parameter_names
 import 'dart:convert';
 // import 'dart:html';
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
-import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 
@@ -28,7 +27,7 @@ class _It1HomePageState extends State<It1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/it/it1.json");
+    final dataJson = await rootBundle.loadString("/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/it1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["it1prododucts"];

@@ -13,6 +13,8 @@ import 'MainPages/It/sem1/it1.dart';
 
 
 class DropDownPage extends StatefulWidget {
+  const DropDownPage({super.key});
+
   @override
   State<DropDownPage> createState() => _DropDownPageState();
 }
@@ -73,7 +75,6 @@ class _DropDownPageState extends State<DropDownPage> {
               subject,
               (onChanged) {
                 subjectId = onChanged;
-                print("The value is $subjectId");
               },
               (onValidate) {
                 if (subjectId == "0") {
@@ -94,7 +95,6 @@ class _DropDownPageState extends State<DropDownPage> {
               sem,
               (onChanged) {
                 semId = onChanged;
-                print(semId);
               },
               (onValidate) {},
               borderColor: Colors.black,
@@ -102,7 +102,7 @@ class _DropDownPageState extends State<DropDownPage> {
               optionLabel: "NAME",
               optionValue: "ID",
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             InkWell(onTap: () {
@@ -260,12 +260,12 @@ class _DropDownPageState extends State<DropDownPage> {
               }},
                 child:
                 Container(
-                  child: "Submit".text.color(Colors.white).xl5.center.make(),
                   height: 50,
                   width: 300,
                   decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(50)),
+                  child: "Submit".text.color(Colors.white).xl5.center.make(),
                 ).backgroundColor(Colors.white)
                 
             )

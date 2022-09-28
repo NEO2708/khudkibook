@@ -1,18 +1,8 @@
-// ignore_for_file: unused_import
-
 // import 'dart:html';
-
-
 import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
-import 'package:khudkibook/models/app.dart';
-
-// ignore: depend_on_referenced_packages
 import 'package:velocity_x/velocity_x.dart';
-
 import '../../../widget/appimage.dart';
-
-
 
 class GetIt1Books extends StatefulWidget {
   final It1items books;
@@ -43,9 +33,7 @@ class _GetIt1BooksState extends State<GetIt1Books> {
               children: [
                 Hero(
                     tag: "img-${widget.books.id}",
-                    child:  MySimg(image: widget.books.image).w(300)),
-        
-
+                    child: MySimg(image: widget.books.image).w(300)),
                 Expanded(
                   child: VxArc(
                     height: 50,
@@ -80,8 +68,8 @@ class _GetIt1BooksState extends State<GetIt1Books> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             ElevatedButton(
-                                    onPressed: (() => (
-                                        widget.books.durl.toString())),
+                                    onPressed: (() =>
+                                        (widget.books.durl.toString())),
                                     child: "Book PDF"
                                         .text
                                         .bold
@@ -94,8 +82,8 @@ class _GetIt1BooksState extends State<GetIt1Books> {
                               width: 10,
                             ),
                             ElevatedButton(
-                                    onPressed: (() => (
-                                        widget.books.surl.toString())),
+                                    onPressed: (() =>
+                                        (widget.books.surl.toString())),
                                     child: "Syllabus"
                                         .text
                                         .bold
@@ -113,8 +101,8 @@ class _GetIt1BooksState extends State<GetIt1Books> {
                           //  mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             ElevatedButton(
-                                    onPressed: (() => (
-                                        widget.books.lpurl.toString())),
+                                    onPressed: (() =>
+                                        (widget.books.lpurl.toString())),
                                     child: "Last Year Paper"
                                         .text
                                         .xl3
@@ -126,8 +114,8 @@ class _GetIt1BooksState extends State<GetIt1Books> {
                               height: 10,
                             ),
                             ElevatedButton(
-                                    onPressed: (() => (
-                                        widget.books.purl.toString())),
+                                    onPressed: (() =>
+                                        (widget.books.purl.toString())),
                                     child: "Practicals PDF"
                                         .text
                                         .xl3
@@ -200,8 +188,8 @@ class _GetIt1BooksState extends State<GetIt1Books> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             ElevatedButton(
-                                    onPressed: (() => (
-                                        widget.books.durl.toString())),
+                                    onPressed: (() =>
+                                        (widget.books.durl.toString())),
                                     child: "Book PDF"
                                         .text
                                         .bold
@@ -214,8 +202,8 @@ class _GetIt1BooksState extends State<GetIt1Books> {
                               width: 10,
                             ),
                             ElevatedButton(
-                                    onPressed: (() => (
-                                        widget.books.surl.toString())),
+                                    onPressed: (() =>
+                                        (widget.books.surl.toString())),
                                     child: "Syllabus"
                                         .text
                                         .bold
@@ -233,8 +221,8 @@ class _GetIt1BooksState extends State<GetIt1Books> {
                           //  mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             ElevatedButton(
-                                    onPressed: (() => (
-                                        widget.books.lpurl.toString())),
+                                    onPressed: (() =>
+                                        (widget.books.lpurl.toString())),
                                     child: "Last Year Paper"
                                         .text
                                         .xl3
@@ -246,8 +234,8 @@ class _GetIt1BooksState extends State<GetIt1Books> {
                               height: 10,
                             ),
                             ElevatedButton(
-                                    onPressed: (() => (
-                                        widget.books.purl.toString())),
+                                    onPressed: (() =>
+                                        (widget.books.purl.toString())),
                                     child: "Practicals PDF"
                                         .text
                                         .xl3

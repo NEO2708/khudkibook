@@ -2,15 +2,12 @@
 // ignore_for_file: prefer_const_constructors, avoid_types_as_parameter_names
 import 'dart:convert';
 // import 'dart:html';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
 import 'package:khudkibook/MainPages/Mechnical/sem1/getme1.dart';
 import 'package:khudkibook/MainPages/Mechnical/sem1/me1model.dart';
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
-import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 
@@ -29,7 +26,7 @@ class _Me1HomePageState extends State<Me1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/me/me1.json");
+    final dataJson = await rootBundle.loadString("/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/me/me1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["me1prododucts"];

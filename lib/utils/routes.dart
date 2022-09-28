@@ -5,9 +5,7 @@ class MyRoutes {
   static String chgTheme = "/theme";
   static String downloaded = "/downlodes";
   static String profile = "/myprofile";
-  // ignore: non_constant_identifier_names
-  static String Login = "/LOGIN";
-  static String It1 = "/Itsem1";
+
   static String homePage = "/Main";
 
 }

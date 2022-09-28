@@ -1,16 +1,7 @@
-// ignore_for_file: depend_on_referenced_packages
-
-// import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-
-// ignore: unused_import
-import 'package:google_fonts/google_fonts.dart';
 import 'package:khudkibook/dropdown.dart';
-
 import 'package:khudkibook/pages/profil.dart';
 import 'package:khudkibook/widget/theme.dart';
-
-import 'MainPages/It/sem1/it1.dart';
 import 'pages/chgThems.dart';
 import 'pages/homepage.dart';
 import 'utils/routes.dart';
@@ -45,16 +36,15 @@ class MyHp extends StatelessWidget {
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
       debugShowCheckedModeBanner: false,
-      initialRoute: MyRoutes.It1,
+      initialRoute: MyRoutes.homePage,
       routes: {
-        "/": (context) => DropDownPage(),
+        "/": (context) => const DropDownPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
         // MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.chgTheme: (context) => const ChgTheme(),
 
         MyRoutes.profile: (context) => const MyProfile(),
-        MyRoutes.It1: (context) =>  It1HomePage(),
-        MyRoutes.homePage: (context) =>  DropDownPage(),
+        MyRoutes.homePage: (context) =>  const DropDownPage(),
       },
     );
   }

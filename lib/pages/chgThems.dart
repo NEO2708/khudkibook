@@ -1,8 +1,4 @@
-// ignore: file_names
-// ignore: file_names
-// ignore: depend_on_referenced_packages
 import 'package:flutter/cupertino.dart';
-// ignore: depend_on_referenced_packages
 import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -54,12 +50,9 @@ class ChgTheme extends StatelessWidget {
                 Radio(
                   groupValue: 3,
                   value: 0,
-                  onChanged: (int? value) {
-                    
-                  },
+                  onChanged: (int? value) {},
                 ),
                 "Dark Theme".text.color(context.primaryColor).xl4.make(),
-               
               ],
             ),
             const Placeholder(

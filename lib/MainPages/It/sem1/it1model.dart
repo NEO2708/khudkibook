@@ -3,7 +3,7 @@ import 'dart:convert';
 
 class It1Model {
   static List<It1items> product=[]; 
-    It1items getById(int id) => product.firstWhere((element) => element.id == id, orElse: null);
+    It1items getById(int id) => product.firstWhere((element) => element.id == id );
    It1items getByPosition(int pos) =>product[pos];
   //   It1items(
   //     id: 001,

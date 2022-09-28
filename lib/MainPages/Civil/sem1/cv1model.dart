@@ -3,6 +3,7 @@ import 'dart:convert';
 
 class Cv1Model {
   static List<Cv1items> product=[]; 
+    // ignore: null_closures
     Cv1items getById(int id) => product.firstWhere((element) => element.id == id, orElse: null);
    Cv1items getByPosition(int pos) =>product[pos];
   //   Cv1items(

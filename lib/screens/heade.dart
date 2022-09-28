@@ -4,6 +4,8 @@ import 'package:velocity_x/velocity_x.dart';
 class MyHeadIcon extends StatelessWidget {
   final imgu =
       "https://cdn2.iconfinder.com/data/icons/diwali-2027/32/shree_sree_hindu_gita_book_holy_religion-512.png";
+
+  const MyHeadIcon({super.key});
   @override
   Widget build(BuildContext context) {
     return Column(
