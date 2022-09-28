@@ -9,6 +9,8 @@ import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
 import 'package:khudkibook/MainPages/Computer/sem1/cmp1model.dart';
 import 'package:khudkibook/MainPages/Computer/sem1/getcmp1.dart';
+import 'package:khudkibook/MainPages/Electrical/sem1/el1model.dart';
+import 'package:khudkibook/MainPages/Electrical/sem1/getel1.dart';
 import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
@@ -19,12 +21,12 @@ import 'package:khudkibook/widget/drawer.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
-class Cmp1HomePage extends StatefulWidget {
+class El1HomePage extends StatefulWidget {
   @override
-  State<Cmp1HomePage> createState() => _Cmp1HomePageState();
+  State<El1HomePage> createState() => _El1HomePageState();
 }
 
-class _Cmp1HomePageState extends State<Cmp1HomePage> {
+class _El1HomePageState extends State<El1HomePage> {
   @override
   void initState() {
     super.initState();
@@ -32,12 +34,12 @@ class _Cmp1HomePageState extends State<Cmp1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/cmp1.json");
+    final dataJson = await rootBundle.loadString("assets/files/el1.json");
     final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["cmp1prododucts"];
-    Cmp1Model.product = List.from(productData)
-        .map<Cmp1items>((It) => Cmp1items.fromMap(It))
+    var productData = decodData["el1prododucts"];
+    El1Model.product = List.from(productData)
+        .map<El1items>((It) => El1items.fromMap(It))
         .toList();
     setState(() {});
   }
@@ -94,7 +96,7 @@ class _Cmp1HomePageState extends State<Cmp1HomePage> {
             MyHeader(),
 
             // ignore: unnecessary_null_comparison
-            if (Cmp1Model.product != null && Cmp1Model.product.isNotEmpty)
+            if (El1Model.product != null && El1Model.product.isNotEmpty)
               MyContent().expand()
             else
               Center(
@@ -117,15 +119,15 @@ class MyContent extends StatelessWidget {
             // padding: EdgeInsets.all(5),
             shrinkWrap: true,
 
-            itemCount: Cmp1Model.product.length,
+            itemCount: El1Model.product.length,
             itemBuilder: (context, index) {
-              final books = Cmp1Model.product[index];
+              final books = El1Model.product[index];
 
               return InkWell(
                   onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: ((context) => GetCmp1Books(books: books)),
+                          builder: ((context) => GetEl1Books(books: books)),
                         ),
                       ),
                   child: MyBooks(books: books));
@@ -133,15 +135,15 @@ class MyContent extends StatelessWidget {
           )
         : ListView.builder(
             shrinkWrap: true,
-            itemCount: Cmp1Model.product.length,
+            itemCount: El1Model.product.length,
             itemBuilder: (context, index) {
-              final books = Cmp1Model.product[index];
+              final books = El1Model.product[index];
 
               return InkWell(
                   onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => GetCmp1Books(books: books)))),
+                          builder: ((context) => GetEl1Books(books: books)))),
                   child: MyBooks(books: books));
             },
           );
@@ -149,7 +151,7 @@ class MyContent extends StatelessWidget {
 }
 
 class MyBooks extends StatefulWidget {
-  final Cmp1items books;
+  final El1items books;
 
   // ignore: use_key_in_widget_constructors
   const MyBooks({

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1.dart';
 import 'package:khudkibook/MainPages/Computer/sem1/cmp1.dart';
+import 'package:khudkibook/MainPages/Electrical/sem1/el1.dart';
 import 'package:khudkibook/MainPages/Mechnical/sem1/me1.dart';
 import 'package:snippet_coder_utils/FormHelper.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -156,15 +157,15 @@ class _DropDownPageState extends State<DropDownPage> {
             //     if (semId == "70") {}
             //     if (semId == "50") {}
              }
-            //   // Electrical
-            //   if (subjectId == "3") {
-            //     if (semId == "10") {
-            //       Navigator.push(
-            //           context,
-            //           MaterialPageRoute(
-            //             builder: (context) => const ElePage1(),
-            //           ));
-            //     }
+              // Electrical
+              if (subjectId == "3") {
+                if (semId == "10") {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>  El1HomePage(),
+                      ));
+                }
             //     if (semId == "20") {
             //       Navigator.push(
             //           context,
@@ -184,7 +185,7 @@ class _DropDownPageState extends State<DropDownPage> {
             //     if (semId == "60") {}
             //     if (semId == "70") {}
             //     if (semId == "50") {}
-            //   }
+             }
               // Civil
               if (subjectId == "4") {
                 if (semId == "10") {
