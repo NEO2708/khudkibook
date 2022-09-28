@@ -29,7 +29,7 @@ class _Me1HomePageState extends State<Me1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/sem1/me1.json");
+    final dataJson = await rootBundle.loadString("assets/files/me/me1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["me1prododucts"];

@@ -28,7 +28,7 @@ class _It1HomePageState extends State<It1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/sem1/it1.json");
+    final dataJson = await rootBundle.loadString("assets/files/it/it1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["it1prododucts"];

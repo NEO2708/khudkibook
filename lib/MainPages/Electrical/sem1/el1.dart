@@ -2,20 +2,15 @@
 // ignore_for_file: prefer_const_constructors, avoid_types_as_parameter_names
 import 'dart:convert';
 // import 'dart:html';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
-import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
-import 'package:khudkibook/MainPages/Computer/sem1/cmp1model.dart';
-import 'package:khudkibook/MainPages/Computer/sem1/getcmp1.dart';
+
 import 'package:khudkibook/MainPages/Electrical/sem1/el1model.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/getel1.dart';
-import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
-import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
+
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
-import 'package:khudkibook/utils/routes.dart';
+
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 
@@ -34,7 +29,7 @@ class _El1HomePageState extends State<El1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/sem1/el1.json");
+    final dataJson = await rootBundle.loadString("assets/files/el/el1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["el1prododucts"];
@@ -191,13 +186,22 @@ class _MyBooksState extends State<MyBooks> {
                         style: ButtonStyle(),
                         onPressed: (() {
                           widget.books.durl.toString();
-                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            duration: Duration(seconds: 2),
-                              content: "Your Download Must Have Started                        | Check Notification Bar"
-                                  .text.center.xl.green500
-                                  .make()));
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              duration: Duration(seconds: 2),
+                              content:
+                                  "Your Download Must Have Started                        | Check Notification Bar"
+                                      .text
+                                      .center
+                                      .xl
+                                      .green500
+                                      .make()));
                         }),
-                        child: "Full-Book".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make())
+                        child: "Full-Book"
+                            .text
+                            .color(Color.fromARGB(255, 30, 24, 16))
+                            .bold
+                            .xl2
+                            .make())
                     .wPCT(
                         context: context, widthPCT: context.isMobile ? 28 : 20)
                     .hPCT(
@@ -230,7 +234,12 @@ class MyHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 30,
-      child: "Electrical | Sem-1".text.color(context.primaryColor).center.xl3.make(),
+      child: "Electrical | Sem-1"
+          .text
+          .color(context.primaryColor)
+          .center
+          .xl3
+          .make(),
     );
   }
 }

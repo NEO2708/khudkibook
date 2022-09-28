@@ -30,7 +30,7 @@ class _Cv1HomePageState extends State<Cv1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/sem1/cv1.json");
+    final dataJson = await rootBundle.loadString("assets/files/cv/cv1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["cv1prododucts"];
