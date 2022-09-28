@@ -6,11 +6,11 @@ import 'package:flutter/material.dart';
 // ignore: unused_import
 import 'package:google_fonts/google_fonts.dart';
 import 'package:khudkibook/dropdown.dart';
-import 'package:khudkibook/pages/downloaded.dart';
-import 'package:khudkibook/MainPages/It/it1.dart';
+
 import 'package:khudkibook/pages/profil.dart';
 import 'package:khudkibook/widget/theme.dart';
 
+import 'MainPages/It/sem1/it1.dart';
 import 'pages/chgThems.dart';
 import 'pages/homepage.dart';
 import 'utils/routes.dart';
@@ -51,7 +51,7 @@ class MyHp extends StatelessWidget {
         MyRoutes.homeRoute: (context) => HomePage(),
         // MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.chgTheme: (context) => const ChgTheme(),
-        MyRoutes.downloaded: (context) => const MyDownloades(),
+
         MyRoutes.profile: (context) => const MyProfile(),
         MyRoutes.It1: (context) =>  It1HomePage(),
         MyRoutes.homePage: (context) =>  DropDownPage(),

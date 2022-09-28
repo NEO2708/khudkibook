@@ -2,29 +2,26 @@
 // ignore_for_file: prefer_const_constructors, avoid_types_as_parameter_names
 import 'dart:convert';
 // import 'dart:html';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khudkibook/MainPages/It/it1model.dart';
-import 'package:khudkibook/MainPages/It/getIt1.dart';
+import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
+import 'package:khudkibook/MainPages/Mechnical/sem1/getme1.dart';
+import 'package:khudkibook/MainPages/Mechnical/sem1/me1model.dart';
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
 import 'package:khudkibook/utils/routes.dart';
+import 'package:khudkibook/widget/appimage.dart';
+import 'package:khudkibook/widget/drawer.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
-import '../../models/app.dart';
-import '../../widget/appimage.dart';
-import '../../widget/drawer.dart';
-import '../../pages/get.dart';
-
-class It1HomePage extends StatefulWidget {
+class Me1HomePage extends StatefulWidget {
   @override
-  State<It1HomePage> createState() => _It1HomePageState();
+  State<Me1HomePage> createState() => _Me1HomePageState();
 }
 
-class _It1HomePageState extends State<It1HomePage> {
+class _Me1HomePageState extends State<Me1HomePage> {
   @override
   void initState() {
     super.initState();
@@ -32,12 +29,12 @@ class _It1HomePageState extends State<It1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/it1.json");
+    final dataJson = await rootBundle.loadString("assets/files/me1.json");
     final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["it1prododucts"];
-    It1Model.product = List.from(productData)
-        .map<It1items>((It) => It1items.fromMap(It))
+    var productData = decodData["me1prododucts"];
+    Me1Model.product = List.from(productData)
+        .map<Me1items>((It) => Me1items.fromMap(It))
         .toList();
     setState(() {});
   }
@@ -94,7 +91,7 @@ class _It1HomePageState extends State<It1HomePage> {
             MyHeader(),
 
             // ignore: unnecessary_null_comparison
-            if (It1Model.product != null && It1Model.product.isNotEmpty)
+            if (Me1Model.product != null && Me1Model.product.isNotEmpty)
               MyContent().expand()
             else
               Center(
@@ -117,15 +114,15 @@ class MyContent extends StatelessWidget {
             // padding: EdgeInsets.all(5),
             shrinkWrap: true,
 
-            itemCount: It1Model.product.length,
+            itemCount: Me1Model.product.length,
             itemBuilder: (context, index) {
-              final books = It1Model.product[index];
+              final books = Me1Model.product[index];
 
               return InkWell(
                   onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: ((context) => GetIt1Books(books: books)),
+                          builder: ((context) => GetMl1Books(books: books)),
                         ),
                       ),
                   child: MyBooks(books: books));
@@ -133,15 +130,15 @@ class MyContent extends StatelessWidget {
           )
         : ListView.builder(
             shrinkWrap: true,
-            itemCount: It1Model.product.length,
+            itemCount: Me1Model.product.length,
             itemBuilder: (context, index) {
-              final books = It1Model.product[index];
+              final books = Me1Model.product[index];
 
               return InkWell(
                   onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => GetIt1Books(books: books)))),
+                          builder: ((context) => GetMl1Books(books: books)))),
                   child: MyBooks(books: books));
             },
           );
@@ -149,7 +146,7 @@ class MyContent extends StatelessWidget {
 }
 
 class MyBooks extends StatefulWidget {
-  final It1items books;
+  final Me1items books;
 
   // ignore: use_key_in_widget_constructors
   const MyBooks({

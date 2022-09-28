@@ -4,24 +4,29 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
+import 'package:khudkibook/MainPages/Computer/sem1/cmp1model.dart';
+import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/models/app.dart';
-import 'package:khudkibook/MainPages/It/it1model.dart';
+
 // ignore: depend_on_referenced_packages
 import 'package:velocity_x/velocity_x.dart';
 
-import '../../widget/appimage.dart';
+import '../../../widget/appimage.dart';
 
-class GetIt1Books extends StatefulWidget {
-  final It1items books;
+
+
+class GetCmp1Books extends StatefulWidget {
+  final Cmp1items books;
 
   // ignore: unnecessary_null_comparison
-  const GetIt1Books({super.key, required this.books}) : assert(books != null);
+  const GetCmp1Books({super.key, required this.books}) : assert(books != null);
 
   @override
-  State<GetIt1Books> createState() => _GetIt1BooksState();
+  State<GetCmp1Books> createState() => _GetIt1BooksState();
 }
 
-class _GetIt1BooksState extends State<GetIt1Books> {
+class _GetIt1BooksState extends State<GetCmp1Books> {
   @override
   Widget build(BuildContext context) {
     return context.isMobile
