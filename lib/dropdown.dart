@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1.dart';
+import 'package:khudkibook/MainPages/Civil/sem2/cv2.dart';
 import 'package:khudkibook/MainPages/Computer/sem1/cmp1.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/el1.dart';
 import 'package:khudkibook/MainPages/Mechnical/sem1/me1.dart';
@@ -207,13 +208,13 @@ class _DropDownPageState extends State<DropDownPage> {
                           builder: (context) =>  Cv1HomePage(),
                         ));
                   }
-              //     if (semId == "20") {
-              //       Navigator.push(
-              //           context,
-              //           MaterialPageRoute(
-              //             builder: (context) => const CivPage2(),
-              //           ));
-              //     }
+                  if (semId == "20") {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>  Cv2HomePage(),
+                        ));
+                  }
               //     if (semId == "30") {
               //       Navigator.push(
               //           context,
