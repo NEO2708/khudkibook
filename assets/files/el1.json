@@ -1,0 +1,52 @@
+{
+    "el1prododucts": [
+        {
+            "id": 8,
+            "name": "Mathematics",
+            "desc": "Computer && I.T",
+            "size": "10mb",
+            "sem": "1st-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=1YpSYw_7oUvfB-9yraari4-1oIn3aCaTi",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/008.png"
+        },
+        {
+            "id": 14,
+            "name": "Communication Skills in English",
+            "desc": "All branch",
+            "size": "10mb",
+            "sem": "Sem-1",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/014.png"
+        },
+        {
+            "id": 20,
+            "name": "D C Circuits ",
+            "desc": "Electrical",
+            "size": "10mb",
+            "sem": "Sem-1",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/020.png"
+        },
+        {
+            "id": 15,
+            "name": "Engineering Chemistry",
+            "desc": "Electrical",
+            "size": "10mb",
+            "sem": "Sem-1 & 2",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/015.png"
+        }
+    ]
+}
