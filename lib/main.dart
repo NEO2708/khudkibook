@@ -45,7 +45,7 @@ class MyHp extends StatelessWidget {
       theme: MyTheme.lightTheme(context),
       darkTheme: MyTheme.darkTheme(context),
       debugShowCheckedModeBanner: false,
-      initialRoute: MyRoutes.homePage,
+      initialRoute: MyRoutes.It1,
       routes: {
         "/": (context) => DropDownPage(),
         MyRoutes.homeRoute: (context) => HomePage(),

@@ -3,11 +3,14 @@
 import 'dart:convert';
 // import 'dart:html';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/It/it1model.dart';
 import 'package:khudkibook/MainPages/It/getIt1.dart';
+import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
+import 'package:khudkibook/utils/routes.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
@@ -45,14 +48,26 @@ class _It1HomePageState extends State<It1HomePage> {
 
     return Scaffold(
       // floatingActionButton: FloatingActionButton(
+
       //   onPressed: () {
-      //     Navigator.pushNamed(context, MyRoutes.downloaded);
+      //     // themeNotifier.isDark
+      //   //           ? themeNotifier.isDark = false
+      //   //           : themeNotifier.isDark = true;
+
       //   },
       //   backgroundColor: context.primaryColor,
       //   child:
       //       Icon(CupertinoIcons.cloud_download).iconColor(context.canvasColor),
       // ),
       appBar: AppBar(
+        actions: [
+          IconButton(
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: ((context) => DropDownPage())));
+              },
+              icon: Icon(Icons.change_circle_outlined))
+        ],
         title: MyHeadIcon(),
 
         // actions: [
@@ -70,7 +85,6 @@ class _It1HomePageState extends State<It1HomePage> {
         // ignore: prefer_const_constructors
         elevation: 0.0,
       ),
-
       drawer: MyDrawer(),
       backgroundColor: context.cardColor,
       body: Padding(
@@ -173,8 +187,15 @@ class _MyBooksState extends State<MyBooks> {
                 widget.books.sem.text.extraBold.xl.make(),
                 ElevatedButton(
                         style: ButtonStyle(),
-                        onPressed: (() => (widget.books.durl.toString())),
-                        child: "Get".text.bold.xl2.make())
+                        onPressed: (() {
+                          widget.books.durl.toString();
+                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                            duration: Duration(seconds: 2),
+                              content: "Your Download Must Have Started                        | Check Notification Bar"
+                                  .text.center.xl.green500
+                                  .make()));
+                        }),
+                        child: "Full-Book".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make())
                     .wPCT(
                         context: context, widthPCT: context.isMobile ? 28 : 20)
                     .hPCT(
@@ -202,6 +223,12 @@ class _MyBooksState extends State<MyBooks> {
 //   anchorElement.download = "";
 //   anchorElement.click();
 // }
-
-
-
+class MyHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 30,
+      child: "I.T | Sem-1".text.color(context.primaryColor).center.xl3.make(),
+    );
+  }
+}

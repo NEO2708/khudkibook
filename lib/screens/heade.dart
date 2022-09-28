@@ -15,20 +15,5 @@ class MyHeadIcon extends StatelessWidget {
   }
 }
 
-// ignore: use_key_in_widget_constructors
-class MyHeader extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 40,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: const [
-          // MyDropdown(),
-          // MyDropdownt(),
-        ],
-      ),
-    );
-  }
-}
+
 

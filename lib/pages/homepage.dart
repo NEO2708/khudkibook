@@ -75,7 +75,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(20.0),
         child: SafeArea(
           child: Column(children: [
-            MyHeader(),
+            // MyHeader(),
 
             // ignore: unnecessary_null_comparison
             if (AppModel.product != null && AppModel.product.isNotEmpty)
@@ -216,21 +216,7 @@ class MyHeadIcon extends StatelessWidget {
 }
 
 // ignore: use_key_in_widget_constructors
-class MyHeader extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 40,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: const [
-          // MyDropdown(),
-          // MyDropdownt(),
-        ],
-      ),
-    );
-  }
-}
+
 
 
 

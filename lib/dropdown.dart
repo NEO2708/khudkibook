@@ -39,7 +39,7 @@ class _DropDownPageState extends State<DropDownPage> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return   SafeArea(
       child: Scaffold(
           // appBar: AppBar(
           //   title: "Select All Fields".text.xl3.color(context.primaryColor).make(),
