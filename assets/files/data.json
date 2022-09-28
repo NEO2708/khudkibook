@@ -278,10 +278,10 @@
         },
         {
             "id": 24,
-            "name": "Fundamentals of Electricals and Electronics",
-            "desc": "Computer ",
+            "name": "Applied Chemistry",
+            "desc": "Civil ",
             "size": "10mb",
-            "sem": "Sem-1",
+            "sem": "Sem-2",
             "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
             "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
             "lpurl": "https://drive.google.com/uc?export=download&id=",
@@ -290,15 +290,75 @@
         },
         {
             "id": 25,
-            "name": "Fundamentals of Electricals and Electronics",
-            "desc": "Computer ",
+            "name": "Applied Mathematics",
+            "desc": "Civil | Mechanical",
             "size": "10mb",
-            "sem": "Sem-1",
+            "sem": "Sem-2",
             "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
             "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
             "lpurl": "https://drive.google.com/uc?export=download&id=",
             "purl": "https://drive.google.com/uc?export=download&id=",
             "image": "https://neo2708.github.io/pic.github.io/025.png"
+        },
+        {
+            "id": 26,
+            "name": "Engineering Mechanics",
+            "desc": "Civil ",
+            "size": "10mb",
+            "sem": "Sem-2",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/026.png"
+        },
+        {
+            "id": 27,
+            "name": "Civil Engineering Drawing",
+            "desc": "Civil ",
+            "size": "10mb",
+            "sem": "Sem-2",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/027.png"
+        },
+        {
+            "id": 28,
+            "name": "Mechanical Drafting",
+            "desc": "Mechanical",
+            "size": "10mb",
+            "sem": "Sem-2",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/028.png"
+        },
+        {
+            "id": 29,
+            "name": "Applied Mathematics",
+            "desc": "Civil | Mechanical",
+            "size": "10mb",
+            "sem": "Sem-2",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/029.png"
+        },
+        {
+            "id": 30,
+            "name": "Applied Mathematics",
+            "desc": "Civil | Mechanical",
+            "size": "10mb",
+            "sem": "Sem-2",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/030.png"
         }
     ]
    

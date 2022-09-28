@@ -1,0 +1,52 @@
+{
+    "cmp2products": [
+        {
+            "id": 19,
+            "name": "Physics",
+            "desc": "I.t | Computer ",
+            "size": "10mb",
+            "sem": "Sem-2",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/019.png"
+        },
+        {
+            "id": 22,
+            "name": "Engineering Mathematics",
+            "desc": "Computer | I.T | Electrical ",
+            "size": "10mb",
+            "sem": "Sem-1",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/022.png"
+        },
+        {
+            "id": 2,
+            "name": "Basic Computer Programming",
+            "desc": "Computer",
+            "size": "10mb",
+            "sem": "2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/002.png"
+        },
+        {
+            "id": 4,
+            "name": "Basic of Digital Electronics",
+            "desc": "Computer ",
+            "size": "10mb",
+            "sem": "2nd-Sem",
+            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/004.png"
+        }
+    ]
+}
