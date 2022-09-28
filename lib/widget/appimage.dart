@@ -35,8 +35,6 @@ class _MySimgState extends State<MySimg> {
   @override
   Widget build(BuildContext context) {
     return Image.network(widget.image).box
-              .color(context.cardColor)
-              .roundedFull
               .make()
               .p(20)
               .wPCT(context: context, widthPCT: context.isMobile?50:30);

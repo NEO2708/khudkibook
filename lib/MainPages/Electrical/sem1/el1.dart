@@ -230,7 +230,7 @@ class MyHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 30,
-      child: "I.T | Sem-1".text.color(context.primaryColor).center.xl3.make(),
+      child: "Electrical | Sem-1".text.color(context.primaryColor).center.xl3.make(),
     );
   }
 }
