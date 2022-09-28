@@ -32,7 +32,7 @@ class _Cmp1HomePageState extends State<Cmp1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/cmp1.json");
+    final dataJson = await rootBundle.loadString("assets/files/sem1/cmp1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["cmp1prododucts"];
