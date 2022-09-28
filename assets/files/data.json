@@ -218,10 +218,10 @@
         },
         {
             "id": 19,
-            "name": "Fundamentals of Electricals and Electronics",
-            "desc": "Computer ",
+            "name": "Physics",
+            "desc": "I.t | Computer ",
             "size": "10mb",
-            "sem": "Sem-1",
+            "sem": "Sem-2",
             "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
             "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
             "lpurl": "https://drive.google.com/uc?export=download&id=",
@@ -254,8 +254,8 @@
         },
         {
             "id": 22,
-            "name": "Fundamentals of Electricals and Electronics",
-            "desc": "Computer ",
+            "name": "Engineering Mathematics",
+            "desc": "Computer | I.T | Electrical ",
             "size": "10mb",
             "sem": "Sem-1",
             "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
@@ -266,15 +266,15 @@
         },
         {
             "id": 23,
-            "name": "Fundamentals of Electricals and Electronics",
-            "desc": "Computer ",
+            "name": "A.C. Circuits",
+            "desc": "Electrical",
             "size": "10mb",
-            "sem": "Sem-1",
+            "sem": "Sem-2",
             "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
             "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
             "lpurl": "https://drive.google.com/uc?export=download&id=",
             "purl": "https://drive.google.com/uc?export=download&id=",
-            "image": "https://neo2708.github.io/pic.github.io/023.png"
+            "image": "https://neo2708.github.io/pic.github.io/na.webp"
         },
         {
             "id": 24,
