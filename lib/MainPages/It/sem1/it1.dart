@@ -111,6 +111,7 @@ class MyContent extends StatelessWidget {
                 crossAxisCount: 2, crossAxisSpacing: 15, mainAxisSpacing: 15),
             // padding: EdgeInsets.all(5),
             shrinkWrap: true,
+            
 
             itemCount: It1Model.product.length,
             itemBuilder: (context, index) {
@@ -171,7 +172,7 @@ class _MyBooksState extends State<MyBooks> {
           children: [
             widget.books.name.text.bold
                 .color(context.primaryColor)
-                .xl
+                .minFontSize(18)
                 .make()
                 .py(2),
             widget.books.desc.text.xl.color(context.primaryColor).make().py(2),
@@ -227,3 +228,4 @@ class MyHeader extends StatelessWidget {
     );
   }
 }
+
