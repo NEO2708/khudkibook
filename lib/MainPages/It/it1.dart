@@ -5,20 +5,23 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:khudkibook/MainPages/It/it1model.dart';
+import 'package:khudkibook/MainPages/It/getIt1.dart';
+import 'package:khudkibook/pages/homepage.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
-import '../models/app.dart';
-import '../widget/appimage.dart';
-import '../widget/drawer.dart';
-import 'get.dart';
+import '../../models/app.dart';
+import '../../widget/appimage.dart';
+import '../../widget/drawer.dart';
+import '../../pages/get.dart';
 
-class HomePage extends StatefulWidget {
+class It1HomePage extends StatefulWidget {
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<It1HomePage> createState() => _It1HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _It1HomePageState extends State<It1HomePage> {
   @override
   void initState() {
     super.initState();
@@ -26,13 +29,12 @@ class _HomePageState extends State<HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("assets/files/data.json");
+    final dataJson = await rootBundle.loadString("assets/files/it1.json");
     final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["products"];
-    AppModel.product = List.from(productData)
-        // ignore: non_constant_identifier_names
-        .map<Items>((It) => Items.fromMap(It))
+    var productData = decodData["it1prododucts"];
+    It1Model.product = List.from(productData)
+        .map<It1items>((It) => It1items.fromMap(It))
         .toList();
     setState(() {});
   }
@@ -78,7 +80,7 @@ class _HomePageState extends State<HomePage> {
             MyHeader(),
 
             // ignore: unnecessary_null_comparison
-            if (AppModel.product != null && AppModel.product.isNotEmpty)
+            if (It1Model.product != null && It1Model.product.isNotEmpty)
               MyContent().expand()
             else
               Center(
@@ -101,15 +103,15 @@ class MyContent extends StatelessWidget {
             // padding: EdgeInsets.all(5),
             shrinkWrap: true,
 
-            itemCount: AppModel.product.length,
+            itemCount: It1Model.product.length,
             itemBuilder: (context, index) {
-              final books = AppModel.product[index];
+              final books = It1Model.product[index];
 
               return InkWell(
                   onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: ((context) => GetBooks(books: books)),
+                          builder: ((context) => GetIt1Books(books: books)),
                         ),
                       ),
                   child: MyBooks(books: books));
@@ -117,15 +119,15 @@ class MyContent extends StatelessWidget {
           )
         : ListView.builder(
             shrinkWrap: true,
-            itemCount: AppModel.product.length,
+            itemCount: It1Model.product.length,
             itemBuilder: (context, index) {
-              final books = AppModel.product[index];
+              final books = It1Model.product[index];
 
               return InkWell(
                   onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => GetBooks(books: books)))),
+                          builder: ((context) => GetIt1Books(books: books)))),
                   child: MyBooks(books: books));
             },
           );
@@ -133,7 +135,7 @@ class MyContent extends StatelessWidget {
 }
 
 class MyBooks extends StatefulWidget {
-  final Items books;
+  final It1items books;
 
   // ignore: use_key_in_widget_constructors
   const MyBooks({
@@ -200,37 +202,6 @@ class _MyBooksState extends State<MyBooks> {
 //   anchorElement.download = "";
 //   anchorElement.click();
 // }
-
-class MyHeadIcon extends StatelessWidget {
-  final imgu =
-      "https://cdn2.iconfinder.com/data/icons/diwali-2027/32/shree_sree_hindu_gita_book_holy_religion-512.png";
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        context.isMobile ? Image.network(imgu).w(50) : Image.network(imgu).w(70)
-      ],
-    );
-  }
-}
-
-// ignore: use_key_in_widget_constructors
-class MyHeader extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 40,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: const [
-          // MyDropdown(),
-          // MyDropdownt(),
-        ],
-      ),
-    );
-  }
-}
 
 
 

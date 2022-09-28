@@ -1,11 +1,11 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 
-class AppModel {
-  static List<Items> product=[]; 
-    Items getById(int id) => product.firstWhere((element) => element.id == id, orElse: null);
-   Items getByPosition(int pos) =>product[pos];
-  //   Items(
+class It1Model {
+  static List<It1items> product=[]; 
+    It1items getById(int id) => product.firstWhere((element) => element.id == id, orElse: null);
+   It1items getByPosition(int pos) =>product[pos];
+  //   It1items(
   //     id: 001,
   //     name: "ES",
   //     desc: "Download ES BOOK ",
@@ -21,7 +21,7 @@ class AppModel {
   // ];
 }
 
-class Items {
+class It1items {
   final int id;
   final String name;
   final String desc;
@@ -33,7 +33,7 @@ class Items {
   final String purl;
   final String image;
 
-  Items({
+  It1items({
     required this.id,
     required this.name,
     required this.desc,
@@ -46,7 +46,7 @@ class Items {
     required this.image,
   });
 
-  Items copyWith({
+  It1items copyWith({
     int? id,
     String? name,
     String? desc,
@@ -57,7 +57,7 @@ class Items {
     String? purl,
     String? image,
   }) {
-    return Items(
+    return It1items(
       id: id ?? this.id,
       name: name ?? this.name,
       desc: desc ?? this.desc,
@@ -87,8 +87,8 @@ class Items {
     };
   }
 
-  factory Items.fromMap(Map<String, dynamic> map) {
-    return Items(
+  factory It1items.fromMap(Map<String, dynamic> map) {
+    return It1items(
       id: map['id'] as int,
       name: map['name'] as String,
       desc: map['desc'] as String,
@@ -104,16 +104,16 @@ class Items {
 
   String toJson() => json.encode(toMap());
 
-  factory Items.fromJson(String source) =>
-      Items.fromMap(json.decode(source) as Map<String, dynamic>);
+  factory It1items.fromJson(String source) =>
+      It1items.fromMap(json.decode(source) as Map<String, dynamic>);
 
   @override
   String toString() {
-    return 'Items(id: $id, name: $name, desc: $desc, size: $size ,sem: $sem , durl: $durl,surl:$surl,lpurl:$lpurl,purl:$purl, image: $image)';
+    return 'It1items(id: $id, name: $name, desc: $desc, size: $size ,sem: $sem , durl: $durl,surl:$surl,lpurl:$lpurl,purl:$purl, image: $image)';
   }
 
   @override
-  bool operator ==(covariant Items other) {
+  bool operator ==(covariant It1items other) {
     if (identical(this, other)) return true;
 
     return other.id == id &&
