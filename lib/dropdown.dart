@@ -5,7 +5,10 @@ import 'package:khudkibook/MainPages/Civil/sem1/cv1.dart';
 import 'package:khudkibook/MainPages/Civil/sem2/cv2.dart';
 import 'package:khudkibook/MainPages/Computer/sem1/cmp1.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/el1.dart';
+import 'package:khudkibook/MainPages/Electrical/sem2/el2.dart';
+import 'package:khudkibook/MainPages/It/sem2/it2.dart';
 import 'package:khudkibook/MainPages/Mechnical/sem1/me1.dart';
+import 'package:khudkibook/MainPages/Mechnical/sem2/me2.dart';
 import 'package:snippet_coder_utils/FormHelper.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -116,13 +119,13 @@ class _DropDownPageState extends State<DropDownPage> {
                         builder: (context) => It1HomePage(),
                       ));
                 }
-                // if (semId == "20") {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //         builder: (context) => const ItPage2(),
-                //       ));
-                // }
+                if (semId == "20") {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>  It2HomePage(),
+                      ));
+                }
                 // if (semId == "30") {
                 //   Navigator.push(
                 //       context,
@@ -146,13 +149,13 @@ class _DropDownPageState extends State<DropDownPage> {
                           builder: (context) =>  Cmp1HomePage(),
                         ));
                   }
-              //     if (semId == "20") {
-              //       Navigator.push(
-              //           context,
-              //           MaterialPageRoute(
-              //             builder: (context) => const CmpPage2(),
-              //           ));
-              //     }
+                  if (semId == "20") {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>  Cmp1HomePage(),
+                        ));
+                  }
               //     if (semId == "30") {
               //       Navigator.push(
               //           context,
@@ -175,13 +178,13 @@ class _DropDownPageState extends State<DropDownPage> {
                           builder: (context) =>  El1HomePage(),
                         ));
                   }
-              //     if (semId == "20") {
-              //       Navigator.push(
-              //           context,
-              //           MaterialPageRoute(
-              //             builder: (context) => const ElePage2(),
-              //           ));
-              //     }
+                  if (semId == "20") {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>  El2HomePage(),
+                        ));
+                  }
               //     if (semId == "30") {
               //       Navigator.push(
               //           context,
@@ -237,13 +240,13 @@ class _DropDownPageState extends State<DropDownPage> {
                         builder: (context) => Me1HomePage(),
                       ));
                 }
-                //     if (semId == "20") {
-                //       Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //             builder: (context) =>  Me1HomePage(),
-                //           ));
-                //     }
+                    if (semId == "20") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>  Me2HomePage(),
+                          ));
+                    }
                 //     if (semId == "30") {
                 //       Navigator.push(
                 //           context,
