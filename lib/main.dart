@@ -38,7 +38,6 @@ class MyHp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: MyRoutes.homePage,
       routes: {
-        "/": (context) => const DropDownPage(),
         MyRoutes.homeRoute: (context) => HomePage(),
         // MyRoutes.loginRoute: (context) => LoginPage(),
         MyRoutes.chgTheme: (context) => const ChgTheme(),

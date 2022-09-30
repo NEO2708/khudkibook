@@ -1,6 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first, use_key_in_widget_constructors, duplicate_ignore, unnecessary_string_interpolations, non_constant_identifier_names
 // ignore_for_file: prefer_const_constructors, avoid_types_as_parameter_names
 import 'dart:convert';
+import 'dart:html';
 // import 'dart:html';
 
 import 'package:flutter/material.dart';
@@ -27,7 +28,8 @@ class _It1HomePageState extends State<It1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/it1.json");
+    final dataJson = await rootBundle.loadString(
+        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/it1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["it1prododucts"];
@@ -111,7 +113,6 @@ class MyContent extends StatelessWidget {
                 crossAxisCount: 2, crossAxisSpacing: 15, mainAxisSpacing: 15),
             // padding: EdgeInsets.all(5),
             shrinkWrap: true,
-            
 
             itemCount: It1Model.product.length,
             itemBuilder: (context, index) {
@@ -183,15 +184,26 @@ class _MyBooksState extends State<MyBooks> {
                 widget.books.sem.text.extraBold.xl.make(),
                 ElevatedButton(
                         style: ButtonStyle(),
-                        onPressed: (() {
-                          widget.books.durl.toString();
-                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            duration: Duration(seconds: 2),
-                              content: "Your Download Must Have Started                        | Check Notification Bar"
-                                  .text.center.xl.green500
-                                  .make()));
-                        }),
-                        child: "Full-Book".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make())
+                        onPressed: ((() {
+                          downloadfile(widget.books.durl);
+
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              duration: Duration(seconds: 2),
+                              content:
+                                  "Your Download is Started "
+                                 
+                                      .text
+                                      .center
+                                      .xl
+                                      .green500
+                                      .make()));
+                        })),
+                        child: "Full-Book"
+                            .text
+                            .color(Color.fromARGB(255, 30, 24, 16))
+                            .bold
+                            .xl2
+                            .make())
                     .wPCT(
                         context: context, widthPCT: context.isMobile ? 28 : 20)
                     .hPCT(
@@ -214,11 +226,12 @@ class _MyBooksState extends State<MyBooks> {
   }
 }
 
-// downloadfile(url) {
-//   AnchorElement anchorElement = AnchorElement(href: url);
-//   anchorElement.download = "";
-//   anchorElement.click();
-// }
+downloadfile(url) {
+  AnchorElement anchorElement = AnchorElement(href: url);
+  anchorElement.download = "";
+  anchorElement.click();
+}
+
 class MyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -228,4 +241,3 @@ class MyHeader extends StatelessWidget {
     );
   }
 }
-
