@@ -31,7 +31,7 @@ class _Cv2HomePageState extends State<Cv2HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("//Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cv/cv2.json");
+    final dataJson = await rootBundle.loadString("/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cv/cv2.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["cv2products"];

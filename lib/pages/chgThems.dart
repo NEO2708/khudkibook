@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:khudkibook/pages/tm.dart';
+import 'package:provider/provider.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class ChgTheme extends StatelessWidget {
@@ -7,60 +9,75 @@ class ChgTheme extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: ListTile(
-          leading: const Icon(CupertinoIcons.capsule_fill),
-          title: "Theme".text.xl3.make(),
-        ),
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Row(
+    return Consumer(
+      builder: (context, ThemeModel themeNotifier, child) {return
+        Scaffold(
+          appBar: AppBar(
+            title: ListTile(
+              leading: const Icon(CupertinoIcons.capsule_fill),
+              title: "Theme".text.xl3.make(),
+            ),
+            actions: [
+          IconButton(
+            onPressed: () {
+              themeNotifier.isDark
+                  ? themeNotifier.isDark = false
+                  : themeNotifier.isDark = true;
+            },
+            icon: Icon(
+                themeNotifier.isDark ? Icons.wb_sunny : Icons.nightlight),
+          )
+        ],
+          ),
+          body: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Radio(
-                  groupValue: 1,
-                  value: 0,
-                  onChanged: (int? value) {},
+                Row(
+                  children: [
+                    Radio(
+                      groupValue: 1,
+                      value: 0,
+                      onChanged: (int? value) {},
+                    ),
+                    "System Theme".text.color(context.primaryColor).xl4.make(),
+                  ],
                 ),
-                "System Theme".text.color(context.primaryColor).xl4.make(),
-              ],
-            ),
-            const Placeholder(
-              fallbackHeight: 300,
-            ),
-            Row(
-              children: [
-                Radio(
-                  groupValue: 2,
-                  value: 0,
-                  onChanged: (int? value) {},
+                const Placeholder(
+                  fallbackHeight: 300,
                 ),
-                "Ligt Theme".text.color(context.primaryColor).xl4.make(),
-              ],
-            ),
-            const Placeholder(
-              fallbackHeight: 300,
-            ),
-            Row(
-              children: [
-                Radio(
-                  groupValue: 3,
-                  value: 0,
-                  onChanged: (int? value) {},
+                Row(
+                  children: [
+                    Radio(
+                      groupValue: 2,
+                      value: 0,
+                      onChanged: (int? value) {},
+                    ),
+                    "Ligt Theme".text.color(context.primaryColor).xl4.make(),
+                  ],
                 ),
-                "Dark Theme".text.color(context.primaryColor).xl4.make(),
+                const Placeholder(
+                  fallbackHeight: 300,
+                ),
+                Row(
+                  children: [
+                    Radio(
+                      groupValue: 3,
+                      value: 0,
+                      onChanged: (int? value) {},
+                    ),
+                    "Dark Theme".text.color(context.primaryColor).xl4.make(),
+                  ],
+                ),
+                const Placeholder(
+                  fallbackHeight: 300,
+                ),
               ],
-            ),
-            const Placeholder(
-              fallbackHeight: 300,
-            ),
-          ],
-        ).backgroundColor(context.cardColor),
-      ),
+            ).backgroundColor(context.cardColor),
+          ),
+        );
+      },
     );
   }
 }

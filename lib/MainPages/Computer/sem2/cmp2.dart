@@ -4,16 +4,17 @@ import 'dart:convert';
 // import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khudkibook/MainPages/Computer/sem1/cmp1model.dart';
-import 'package:khudkibook/MainPages/Computer/sem1/getcmp1.dart';
 import 'package:khudkibook/MainPages/Computer/sem2/cmp2model.dart';
 import 'package:khudkibook/MainPages/Computer/sem2/getcmp2.dart';
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
+import 'package:khudkibook/widget/themeChange.dart';
 
 import 'package:velocity_x/velocity_x.dart';
+
+import '../../../widget/floatingbtn.dart';
 
 class Cmp2HomePage extends StatefulWidget {
   @override
@@ -40,48 +41,22 @@ class _Cmp2HomePageState extends State<Cmp2HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // return Consumer(builder: (context, ThemeModel themeNotifier, child) {
 
     return Scaffold(
-      // floatingActionButton: FloatingActionButton(
 
-      //   onPressed: () {
-      //     // themeNotifier.isDark
-      //   //           ? themeNotifier.isDark = false
-      //   //           : themeNotifier.isDark = true;
-
-      //   },
-      //   backgroundColor: context.primaryColor,
-      //   child:
-      //       Icon(CupertinoIcons.cloud_download).iconColor(context.canvasColor),
-      // ),
       appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: ((context) => DropDownPage())));
-              },
-              icon: Icon(Icons.change_circle_outlined))
-        ],
+       actions: const [ChangeTheme()],
         title: MyHeadIcon(),
+        
 
-        // actions: [
-        //   IconButton(
-        //     onPressed: () {
-        //       themeNotifier.isDark
-        //           ? themeNotifier.isDark = false
-        //           : themeNotifier.isDark = true;
-        //     },
-        //     icon: Icon(
-        //         themeNotifier.isDark ? Icons.wb_sunny : Icons.nightlight),
-        //   )
-        // ],
+
         backgroundColor: Colors.transparent,
         // ignore: prefer_const_constructors
         elevation: 0.0,
       ),
       drawer: MyDrawer(),
+      floatingActionButton: MyFloat(),
+
       backgroundColor: context.cardColor,
       body: Padding(
         padding: const EdgeInsets.all(20.0),

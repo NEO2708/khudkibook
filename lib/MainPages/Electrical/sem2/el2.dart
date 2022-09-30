@@ -5,8 +5,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:khudkibook/MainPages/Electrical/sem1/el1model.dart';
-import 'package:khudkibook/MainPages/Electrical/sem1/getel1.dart';
 import 'package:khudkibook/MainPages/Electrical/sem2/el2model.dart';
 import 'package:khudkibook/MainPages/Electrical/sem2/getel2.dart';
 

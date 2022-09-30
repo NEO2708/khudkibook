@@ -34,18 +34,18 @@ dependencies:
   firebase_auth: ^3.10.0
   firebase_auth_web: ^4.5.0
   firebase_core: ^1.23.0
-  google_fonts: ^3.0.1
-  provider: ^6.0.3
-  snippet_coder_utils: ^1.0.12
-  velocity_x: ^3.5.1
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.10.0
+  google_fonts: ^3.0.1
+  provider: ^6.0.3
+  shared_preferences: ^2.0.15
+  snippet_coder_utils: ^1.0.12
+  velocity_x: ^3.5.1
 flutter_icons:
   android: true
   ios: true
   image_path: "/Users/rangolivision/Desktop/code/final/khudkibook/assets/img/bg.png"
-  
 
 dev_dependencies:
   flutter_lints: ^2.0.0
