@@ -35,6 +35,19 @@
             "lpurl": "https://drive.google.com/uc?export=download&id=",
             "purl": "https://drive.google.com/uc?export=download&id=",
             "image": "https://neo2708.github.io/pic.github.io/026.png"
+        },
+        {
+            "id": 28,
+            "name": "Mechanical Drafting",
+            "desc": "Mechanical",
+            "size": "10mb",
+            "sem": "Sem-2",
+            "durl": "https://drive.google.com/uc?export=download&id=1kiq9wzhnb3LOEk0NCj5hBL9_LcuNK97p",
+            "surl": "https://drive.google.com/uc?export=download&id=",
+            "lpurl": "https://drive.google.com/uc?export=download&id=1NBYupLWZCcJWGiW2QWIm7Us2815VcDBr",
+            "purl": "https://drive.google.com/uc?export=download&id=",
+            "image": "https://neo2708.github.io/pic.github.io/028.png"
         }
+               
     ]
 }

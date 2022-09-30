@@ -6,8 +6,8 @@
             "desc": "I.t | Computer ",
             "size": "10mb",
             "sem": "Sem-2",
-            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
-            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "durl": "https://drive.google.com/uc?export=download&id=",
+            "surl": "https://drive.google.com/uc?export=download&id=",
             "lpurl": "https://drive.google.com/uc?export=download&id=",
             "purl": "https://drive.google.com/uc?export=download&id=",
             "image": "https://neo2708.github.io/pic.github.io/019.png"
@@ -18,23 +18,23 @@
             "desc": "Computer | I.T | Electrical ",
             "size": "10mb",
             "sem": "Sem-1",
-            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
-            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "durl": "https://drive.google.com/uc?export=download&id=",
+            "surl": "https://drive.google.com/uc?export=download&id=",
             "lpurl": "https://drive.google.com/uc?export=download&id=",
             "purl": "https://drive.google.com/uc?export=download&id=",
             "image": "https://neo2708.github.io/pic.github.io/022.png"
         },
         {
-            "id": 2,
-            "name": "Basic Computer Programming",
+            "id": 29,
+            "name": "Basic Object Oriented Programming",
             "desc": "Computer",
             "size": "10mb",
-            "sem": "2nd-Sem",
-            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
-            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
-            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "sem": "Sem-2",
+            "durl": "https://drive.google.com/uc?export=download&id=",
+            "surl": "https://drive.google.com/uc?export=download&id=1sj5WLS3CBXDEoC961gFyddpVlULIbcUn",
+            "lpurl": "https://drive.google.com/uc?export=download&id=193LGElNcegMmn27cXsML2O3EeYleAuBw",
             "purl": "https://drive.google.com/uc?export=download&id=",
-            "image": "https://neo2708.github.io/pic.github.io/002.png"
+            "image": "https://neo2708.github.io/pic.github.io/029.png"
         },
         {
             "id": 4,
@@ -42,9 +42,9 @@
             "desc": "Computer ",
             "size": "10mb",
             "sem": "2nd-Sem",
-            "durl": "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
-            "surl": "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
-            "lpurl": "https://drive.google.com/uc?export=download&id=",
+            "durl": "https://drive.google.com/uc?export=download&id=",
+            "surl": "https://drive.google.com/uc?export=download&id=14MZpC-GiXQf4Hdk58YAru1pe6dB1T3eM",
+            "lpurl": "https://drive.google.com/uc?export=download&id=1mT76SmtMYJHcRpTUEHnnYl2NeLE5pkLX",
             "purl": "https://drive.google.com/uc?export=download&id=",
             "image": "https://neo2708.github.io/pic.github.io/004.png"
         }
