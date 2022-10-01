@@ -8,8 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
-import 'package:khudkibook/MainPages/Computer/sem2/cmp2model.dart';
-import 'package:khudkibook/MainPages/Computer/sem2/getcmp2.dart';
 import 'package:khudkibook/It/sem1/getIt1.dart';
 import 'package:khudkibook/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
@@ -24,12 +22,15 @@ import 'package:provider/provider.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
-class Cmp2HomePage extends StatefulWidget {
+import 'getIt2.dart';
+import 'it2model.dart';
+
+class It2HomePage extends StatefulWidget {
   @override
-  State<Cmp2HomePage> createState() => _Cmp2HomePageState();
+  State<It2HomePage> createState() => _It2HomePageState();
 }
 
-class _Cmp2HomePageState extends State<Cmp2HomePage> {
+class _It2HomePageState extends State<It2HomePage> {
   @override
   void initState() {
     super.initState();
@@ -38,12 +39,12 @@ class _Cmp2HomePageState extends State<Cmp2HomePage> {
 
   loadData() async {
     final dataJson = await rootBundle.loadString(
-        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cmp/cmp2.json");
+        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/it2.json");
     final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["cmp2prododucts"];
-    Cmp2Model.product = List.from(productData)
-        .map<Cmp2items>((It) => Cmp2items.fromMap(It))
+    var productData = decodData["it2prododucts"];
+    It2Model.product = List.from(productData)
+        .map<It2items>((It) => It2items.fromMap(It))
         .toList();
     setState(() {});
   }
@@ -68,7 +69,7 @@ class _Cmp2HomePageState extends State<Cmp2HomePage> {
             MyHeader(),
 
             // ignore: unnecessary_null_comparison
-            if (Cmp2Model.product != null && Cmp2Model.product.isNotEmpty)
+            if (It2Model.product != null && It2Model.product.isNotEmpty)
               MyContent().expand()
             else
               Center(
@@ -91,15 +92,15 @@ class MyContent extends StatelessWidget {
             // padding: EdgeInsets.all(5),
             shrinkWrap: true,
 
-            itemCount: Cmp2Model.product.length,
+            itemCount: It2Model.product.length,
             itemBuilder: (context, index) {
-              final books = Cmp2Model.product[index];
+              final books = It2Model.product[index];
 
               return InkWell(
                   onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: ((context) => GetCmp2Books(books: books)),
+                          builder: ((context) => GetIt2Books(books: books)),
                         ),
                       ),
                   child: MyBooks(books: books));
@@ -107,15 +108,15 @@ class MyContent extends StatelessWidget {
           )
         : ListView.builder(
             shrinkWrap: true,
-            itemCount: Cmp2Model.product.length,
+            itemCount: It2Model.product.length,
             itemBuilder: (context, index) {
-              final books = Cmp2Model.product[index];
+              final books = It2Model.product[index];
 
               return InkWell(
                   onTap: () => Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: ((context) => GetCmp2Books(books: books)))),
+                          builder: ((context) => GetIt2Books(books: books)))),
                   child: MyBooks(books: books));
             },
           );
@@ -123,7 +124,7 @@ class MyContent extends StatelessWidget {
 }
 
 class MyBooks extends StatefulWidget {
-  final Cmp2items books;
+  final It2items books;
 
   // ignore: use_key_in_widget_constructors
   const MyBooks({
@@ -221,7 +222,7 @@ class MyHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 30,
-      child: "Civil | Sem-1".text.color(context.primaryColor).center.xl3.make(),
+      child: "I.T | Sem-2".text.color(context.primaryColor).center.xl3.make(),
     );
   }
 }

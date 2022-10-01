@@ -7,25 +7,25 @@ import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem2/cv2model.dart';
 import 'package:khudkibook/It/sem1/it1model.dart';
+import 'package:khudkibook/It/sem2/it2model.dart';
 import 'package:khudkibook/models/app.dart';
 
 // ignore: depend_on_referenced_packages
 import 'package:velocity_x/velocity_x.dart';
 
-import '../../../widget/appimage.dart';
-import 'cmp1model.dart';
+import '../../widget/appimage.dart';
 
-class GetCmp1Books extends StatefulWidget {
-  final Cmp1items books;
+class GetIt2Books extends StatefulWidget {
+  final It2items books;
 
   // ignore: unnecessary_null_comparison
-  const GetCmp1Books({super.key, required this.books}) : assert(books != null);
+  const GetIt2Books({super.key, required this.books}) : assert(books != null);
 
   @override
-  State<GetCmp1Books> createState() => _GetIt1BooksState();
+  State<GetIt2Books> createState() => _GetIt2BooksState();
 }
 
-class _GetIt1BooksState extends State<GetCmp1Books> {
+class _GetIt2BooksState extends State<GetIt2Books> {
   @override
   Widget build(BuildContext context) {
     return context.isMobile
@@ -387,25 +387,8 @@ class _GetIt1BooksState extends State<GetCmp1Books> {
                             const SizedBox(
                               height: 10,
                             ),
-                            // ElevatedButton(
-                            //         onPressed: (() =>
-                            //             (widget.books.purl.toString())),
-                            //         child: "Practicals PDF"
-                            //             .text
-                            //             .xl3
-                            //             .color(context.primaryColor)
-                            //             .make())
-                            //     .h(40)
-                            //     .w64(context),
                           ],
                         ),
-
-                        // ignore: prefer_const_constructors
-                        // .color(Color.fromARGB(255, 0, 160, 252))
-
-                        // widget.books.size.text.blue500.underline.xl.bold
-                        // .make()
-                        // .p(0),
                       ],
                     ).backgroundColor(context.cardColor),
                   ).whFull(context).backgroundColor(context.canvasColor),
