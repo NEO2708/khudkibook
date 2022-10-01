@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/profil.dart';
@@ -9,21 +10,30 @@ import 'pages/homepage.dart';
 import 'utils/routes.dart';
 
 void main() async {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  MyApp({super.key});
+  final Future<FirebaseApp> _initialization = Firebase.initializeApp();
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyHp(),
+      home: FutureBuilder(
+          future: _initialization,
+          builder: ((context, snapshot) {
+            if (snapshot.hasError) {
+              print("error");
+            }
+            if (snapshot.connectionState == ConnectionState.done) {
+              return MyHp();
+            }
+            return CircularProgressIndicator();
+          })),
     );
-    //  MaterialApp(
-    //   home: AuthService().handleAuth(),
-    // );
   }
 }
 
@@ -36,9 +46,8 @@ class MyHp extends StatelessWidget {
       create: (context) => ThemeModel(),
       child: Consumer(
         builder: (context, ThemeModel themeNotifier, child) {
-          return
-          MaterialApp(
-            themeMode: themeNotifier.isDark? ThemeMode.dark:ThemeMode.light,
+          return MaterialApp(
+            themeMode: themeNotifier.isDark ? ThemeMode.dark : ThemeMode.light,
             theme: MyTheme.lightTheme(context),
             darkTheme: MyTheme.darkTheme(context),
             debugShowCheckedModeBanner: false,
@@ -47,7 +56,7 @@ class MyHp extends StatelessWidget {
               MyRoutes.homeRoute: (context) => HomePage(),
               // MyRoutes.loginRoute: (context) => LoginPage(),
               MyRoutes.chgTheme: (context) => const ChgTheme(),
-    
+
               MyRoutes.profile: (context) => const MyProfile(),
               MyRoutes.homePage: (context) => const DropDownPage(),
             },

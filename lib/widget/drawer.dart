@@ -78,6 +78,6 @@ class MyDrawer extends StatelessWidget {
               ),
             ).backgroundColor(context.cardColor),
           )
-        : Icon(Icons.all_inclusive_rounded);
+        : Icon(Icons.handyman_outlined);
   }
 }
