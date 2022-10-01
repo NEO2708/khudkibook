@@ -10,8 +10,11 @@ import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
+import 'package:khudkibook/widget/themeChange.dart';
 
 import 'package:velocity_x/velocity_x.dart';
+
+import '../../../widget/floatingbtn.dart';
 
 class Cmp1HomePage extends StatefulWidget {
   @override
@@ -41,45 +44,16 @@ class _Cmp1HomePageState extends State<Cmp1HomePage> {
     // return Consumer(builder: (context, ThemeModel themeNotifier, child) {
 
     return Scaffold(
-      // floatingActionButton: FloatingActionButton(
-
-      //   onPressed: () {
-      //     // themeNotifier.isDark
-      //   //           ? themeNotifier.isDark = false
-      //   //           : themeNotifier.isDark = true;
-
-      //   },
-      //   backgroundColor: context.primaryColor,
-      //   child:
-      //       Icon(CupertinoIcons.cloud_download).iconColor(context.canvasColor),
-      // ),
       appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: ((context) => DropDownPage())));
-              },
-              icon: Icon(Icons.change_circle_outlined))
-        ],
+        actions: [ChangeTheme()],
         title: MyHeadIcon(),
-
-        // actions: [
-        //   IconButton(
-        //     onPressed: () {
-        //       themeNotifier.isDark
-        //           ? themeNotifier.isDark = false
-        //           : themeNotifier.isDark = true;
-        //     },
-        //     icon: Icon(
-        //         themeNotifier.isDark ? Icons.wb_sunny : Icons.nightlight),
-        //   )
-        // ],
         backgroundColor: Colors.transparent,
         // ignore: prefer_const_constructors
         elevation: 0.0,
       ),
       drawer: MyDrawer(),
+      floatingActionButton: MyFloat(),
+
       backgroundColor: context.cardColor,
       body: Padding(
         padding: const EdgeInsets.all(20.0),

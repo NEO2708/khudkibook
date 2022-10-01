@@ -119,7 +119,7 @@ class _GetIt1BooksState extends State<GetCv2Books> {
                             // syllabus btn
                             ElevatedButton(
                               onPressed: ((() {
-                                if (widget.books.surl != "0") {
+                                if (widget.books.surl == "0") {
                                   ScaffoldMessenger.of(context)
                                       .hideCurrentSnackBar();
                                   ScaffoldMessenger.of(context)

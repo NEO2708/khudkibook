@@ -1,7 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first, use_key_in_widget_constructors, duplicate_ignore, unnecessary_string_interpolations, non_constant_identifier_names, unused_import
 // ignore_for_file: prefer_const_constructors, avoid_types_as_parameter_names
 import 'dart:convert';
-// import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
@@ -17,6 +16,9 @@ import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 
 import 'package:velocity_x/velocity_x.dart';
+
+import '../../../widget/floatingbtn.dart';
+import '../../../widget/themeChange.dart';
 
 class Cv2HomePage extends StatefulWidget {
   @override
@@ -46,45 +48,16 @@ class _Cv2HomePageState extends State<Cv2HomePage> {
     // return Consumer(builder: (context, ThemeModel themeNotifier, child) {
 
     return Scaffold(
-      // floatingActionButton: FloatingActionButton(
-
-      //   onPressed: () {
-      //     // themeNotifier.isDark
-      //   //           ? themeNotifier.isDark = false
-      //   //           : themeNotifier.isDark = true;
-
-      //   },
-      //   backgroundColor: context.primaryColor,
-      //   child:
-      //       Icon(CupertinoIcons.cloud_download).iconColor(context.canvasColor),
-      // ),
       appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: ((context) => DropDownPage())));
-              },
-              icon: Icon(Icons.change_circle_outlined))
-        ],
+        actions: const [ChangeTheme()],
         title: MyHeadIcon(),
-
-        // actions: [
-        //   IconButton(
-        //     onPressed: () {
-        //       themeNotifier.isDark
-        //           ? themeNotifier.isDark = false
-        //           : themeNotifier.isDark = true;
-        //     },
-        //     icon: Icon(
-        //         themeNotifier.isDark ? Icons.wb_sunny : Icons.nightlight),
-        //   )
-        // ],
         backgroundColor: Colors.transparent,
         // ignore: prefer_const_constructors
         elevation: 0.0,
       ),
       drawer: MyDrawer(),
+      floatingActionButton: MyFloat(),
+
       backgroundColor: context.cardColor,
       body: Padding(
         padding: const EdgeInsets.all(20.0),

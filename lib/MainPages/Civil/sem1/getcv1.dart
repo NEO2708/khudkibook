@@ -119,7 +119,7 @@ class _GetIt1BooksState extends State<GetCv1Books> {
                             // syllabus btn
                             ElevatedButton(
                               onPressed: ((() {
-                                if (widget.books.surl != "0") {
+                                if (widget.books.surl == "0") {
                                   ScaffoldMessenger.of(context)
                                       .hideCurrentSnackBar();
                                   ScaffoldMessenger.of(context)
@@ -386,25 +386,8 @@ class _GetIt1BooksState extends State<GetCv1Books> {
                             const SizedBox(
                               height: 10,
                             ),
-                            // ElevatedButton(
-                            //         onPressed: (() =>
-                            //             (widget.books.purl.toString())),
-                            //         child: "Practicals PDF"
-                            //             .text
-                            //             .xl3
-                            //             .color(context.primaryColor)
-                            //             .make())
-                            //     .h(40)
-                            //     .w64(context),
                           ],
                         ),
-
-                        // ignore: prefer_const_constructors
-                        // .color(Color.fromARGB(255, 0, 160, 252))
-
-                        // widget.books.size.text.blue500.underline.xl.bold
-                        // .make()
-                        // .p(0),
                       ],
                     ).backgroundColor(context.cardColor),
                   ).whFull(context).backgroundColor(context.canvasColor),
