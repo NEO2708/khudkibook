@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1.dart';
 import 'package:khudkibook/MainPages/Civil/sem2/cv2.dart';
-import 'package:khudkibook/MainPages/Computer/sem1/cmp1.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/el1.dart';
 import 'package:khudkibook/MainPages/Electrical/sem2/el2.dart';
 import 'package:khudkibook/MainPages/It/sem2/it2.dart';
@@ -12,6 +11,7 @@ import 'package:khudkibook/MainPages/Mechnical/sem2/me2.dart';
 import 'package:snippet_coder_utils/FormHelper.dart';
 import 'package:velocity_x/velocity_x.dart';
 
+import 'MainPages/Computer/sem1/cmp1.dart';
 import 'MainPages/It/sem1/it1.dart';
 
 

@@ -6,7 +6,6 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem2/cv2model.dart';
-import 'package:khudkibook/MainPages/Computer/sem1/cmp1model.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/models/app.dart';
 
@@ -14,6 +13,7 @@ import 'package:khudkibook/models/app.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../../../widget/appimage.dart';
+import 'cmp1model.dart';
 
 class GetCmp1Books extends StatefulWidget {
   final Cmp1items books;

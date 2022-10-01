@@ -6,7 +6,6 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem2/cv2model.dart';
-import 'package:khudkibook/MainPages/Computer/sem1/cmp1model.dart';
 import 'package:khudkibook/MainPages/Electrical/sem2/el2model.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/models/app.dart';

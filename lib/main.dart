@@ -54,7 +54,6 @@ class MyHp extends StatelessWidget {
             initialRoute: MyRoutes.homePage,
             routes: {
               MyRoutes.homeRoute: (context) => HomePage(),
-              // MyRoutes.loginRoute: (context) => LoginPage(),
               MyRoutes.chgTheme: (context) => const ChgTheme(),
 
               MyRoutes.profile: (context) => const MyProfile(),

@@ -11,6 +11,8 @@ import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
 import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
+import 'package:khudkibook/models/app.dart';
+import 'package:khudkibook/pages/get.dart';
 import 'package:khudkibook/pages/homepage.dart';
 import 'package:khudkibook/pages/tm.dart';
 import 'package:khudkibook/utils/routes.dart';
@@ -39,7 +41,7 @@ class _It1HomePageState extends State<It1HomePage> {
         "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/it1.json");
     final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["it1prododucts"];
+    var productData = decodData["it1product"];
     It1Model.product = List.from(productData)
         .map<It1items>((It) => It1items.fromMap(It))
         .toList();
@@ -69,9 +71,10 @@ class _It1HomePageState extends State<It1HomePage> {
             if (It1Model.product != null && It1Model.product.isNotEmpty)
               MyContent().expand()
             else
-              Center(
-                child: CircularProgressIndicator(),
-              ),
+            MyContent().expand()
+              // Center(
+              //   child: CircularProgressIndicator(),
+              // ),
           ]),
         ),
       ),
@@ -219,7 +222,7 @@ class MyHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: 30,
-      child: "Civil | Sem-1".text.color(context.primaryColor).center.xl3.make(),
+      child: "I-T | Sem-1".text.color(context.primaryColor).center.xl3.make(),
     );
   }
 }
