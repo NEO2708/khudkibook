@@ -33,20 +33,20 @@ class _It1HomePageState extends State<It1HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    // loadData();
   }
 
-  loadData() async {
-    final dataJson = await rootBundle.loadString(
-        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/it1.json");
-    final decodData = jsonDecode(dataJson);
+  // loadData() async {
+  //   final dataJson = await rootBundle.loadString(
+  //       "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/it1.json");
+  //   final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["it1product"];
-    It1Model.product = List.from(productData)
-        .map<It1items>((It) => It1items.fromMap(It))
-        .toList();
-    setState(() {});
-  }
+  //   var productData = decodData["it1prododucts"];
+  //   It1Model.product = List.from(productData)
+  //       .map<It1items>((It) => It1items.fromMap(It))
+  //       .toList();
+  //   setState(() {});
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -71,10 +71,9 @@ class _It1HomePageState extends State<It1HomePage> {
             if (It1Model.product != null && It1Model.product.isNotEmpty)
               MyContent().expand()
             else
-            MyContent().expand()
-              // Center(
-              //   child: CircularProgressIndicator(),
-              // ),
+              Center(
+                child: CircularProgressIndicator(),
+              ),
           ]),
         ),
       ),

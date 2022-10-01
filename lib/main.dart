@@ -1,6 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:khudkibook/It/sem1/it1.dart';
 import 'package:khudkibook/dropdown.dart';
+import 'package:khudkibook/pages/login.dart';
 import 'package:khudkibook/pages/profil.dart';
 import 'package:khudkibook/pages/tm.dart';
 import 'package:khudkibook/widget/theme.dart';
@@ -9,8 +11,9 @@ import 'pages/chgThems.dart';
 import 'pages/homepage.dart';
 import 'utils/routes.dart';
 
-void main() async {
+void main()  {
   WidgetsFlutterBinding.ensureInitialized();
+
   runApp(MyApp());
 }
 
@@ -55,6 +58,8 @@ class MyHp extends StatelessWidget {
             routes: {
               MyRoutes.homeRoute: (context) => HomePage(),
               MyRoutes.chgTheme: (context) => const ChgTheme(),
+              MyRoutes.home: (context) =>  It1HomePage(),
+
 
               MyRoutes.profile: (context) => const MyProfile(),
               MyRoutes.homePage: (context) => const DropDownPage(),

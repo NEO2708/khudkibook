@@ -2,23 +2,46 @@
 import 'dart:convert';
 
 class It1Model {
-  static List<It1items> product=[];
-    It1items getById(int id) => product.firstWhere((element) => element.id == id );
-   It1items getByPosition(int pos) =>product[pos];
-  //   It1items(
-  //     id: 001,
-  //     name: "ES",
-  //     desc: "Download ES BOOK ",
-  //     size: "10mb",
-  //     sem: "sem",
-  //     durl: "green",
-  //     surl: "url",
-  //     lpurl:"url",
-  //     purl:"url",
-  //     image:
-  //         "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQC7VVXBf-f1ElflLsUcDbJiyTTDAlq9aaHpOWElLM-hleo8bhAHKYQl3VMQ239XKQVx9o5DhZq7Pyxb-X5H9I",
-  //   ),
-  // ];
+  static List<It1items> product=[
+  //   It1items getById(int id) => product.firstWhere((element) => element.id == id );
+  //  It1items getByPosition(int pos) =>product[pos];
+    It1items(
+      id: 8,
+            name: "Mathematics",
+            desc: "Computer|I.T",
+            size: "1mb",
+            sem: "Sem-1",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
+            lpurl: "https://drive.google.com/uc?export=download&id=1KmhMdlKGFQdER6JRijvp3Cpb11g70atU",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/008.png"),
+    It1items(id: 13,
+            name: "Python Programming",
+            desc: "I.T",
+            size: "10mb",
+            sem: "Sem-1",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=13vnq7yujmZklvrTFrb_RYP0Ii2paSZN7",
+            lpurl: "https://drive.google.com/uc?export=download&id=17DM3fINbdhLGB8GSEHOnt3o_gsLJel84",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/013.png"),
+
+            It1items(
+          id: 14,
+            name: "Communication Skills in English",
+            desc: "All branch",
+            size: "10mb",
+            sem: "Sem-1",
+            durl: "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            surl: "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
+            lpurl: "https://drive.google.com/uc?export=download&id=1zAotD83vv-DYvYdXrPESa9-qB9Aw_nnu",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/014.png"),
+            It1items(id: 7, name: "Introduction To IT System", desc: "I.T", size: "10mb", sem: "Sem-1", durl: "https://drive.google.com/uc?export=download&id=", surl: "https://drive.google.com/uc?export=download&id=18JZjqy8Lm1GPFf1ypewxgEifrZ8cARUw", lpurl: "https://drive.google.com/uc?export=download&id=1752wOhSL44D4i64nkbtcHGMZUwOfNj6W", purl: "https://drive.google.com/uc?export=download&id=", image: "https://neo2708.github.io/pic.github.io/007.png")
+      
+    
+  ];
 }
 
 class It1items {
