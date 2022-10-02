@@ -2,24 +2,64 @@
 import 'dart:convert';
 
 class Cv2Model {
-  static List<Cv2items> product=[]; 
-    // ignore: null_closures
-    Cv2items getById(int id) => product.firstWhere((element) => element.id == id, orElse: null);
-   Cv2items getByPosition(int pos) =>product[pos];
-  //   Cv2items(
-  //     id: 001,
-  //     name: "ES",
-  //     desc: "Download ES BOOK ",
-  //     size: "10mb",
-  //     sem: "sem",
-  //     durl: "green",
-  //     surl: "url",
-  //     lpurl:"url",
-  //     purl:"url",
-  //     image:
-  //         "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQC7VVXBf-f1ElflLsUcDbJiyTTDAlq9aaHpOWElLM-hleo8bhAHKYQl3VMQ239XKQVx9o5DhZq7Pyxb-X5H9I",
-  //   ),
-  // ];
+  static List<Cv2items> product=[
+    Cv2items(
+            id: 5,
+            name: "Environment and Sustainability",
+            desc: "All branch",
+            size: "10mb",
+            sem: "2nd-Sem",
+            durl: "https://drive.google.com/uc?export=download&id=19mG9PrcAhBF_V7PErUq_l3aMNtlvDdyk",
+            surl: "https://drive.google.com/uc?export=download&id=1gFh42jzIkzL4C3snjupJA1ylxCI5OTp0",
+            lpurl: "https://drive.google.com/uc?export=download&id=1crZfwQVi9aLDu0D84eEtxyKyKcjgwS4S",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/005.png"),
+            Cv2items(
+            id: 24,
+            name: "Applied Chemistry",
+            desc: "Civil ",
+            size: "10mb",
+            sem: "Sem-2",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1p_Ap18rixotK3H1iRxZptoxolV95usxm",
+            lpurl: "https://drive.google.com/uc?export=download&id=1iU1TOpYB_sbQ0flY5FgQ_kYyzo4O6rWY",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/024.png"),
+            Cv2items(
+              
+            id: 25,
+            name: "Applied Mathematics",
+            desc: "Civil | Mechanical",
+            size: "10mb",
+            sem: "Sem-2",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=",
+            lpurl: "https://drive.google.com/uc?export=download&id=",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/025.png"),
+            Cv2items(
+            id: 26,
+            name: "Engineering Mechanics",
+            desc: "Civil | Mechanical",
+            size: "10mb",
+            sem: "Sem-2",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1IOP4pgSIZFlRlF6o1lp3t9R3p6z4iPJj",
+            lpurl: "https://drive.google.com/uc?export=download&id=1z2yEpTyx-O9_yir74pQNwlFQY7K42c6s",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/026.png",),
+            Cv2items(
+            id: 27,
+            name: "Civil Engineering Drawing",
+            desc: "Civil ",
+            size: "10mb",
+            sem: "Sem-2",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1XQQCI-4yfJt0alsZaj-OHHDzVopAFi2w/",
+            lpurl: "https://drive.google.com/uc?export=download&id=19rDQrOE1w-LeH7QWxbFC0M8u6DFTbFJN",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/027.png")
+  ];
 }
 
 class Cv2items {

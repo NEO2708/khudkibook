@@ -2,24 +2,61 @@
 import 'dart:convert';
 
 class Cv1Model {
-  static List<Cv1items> product=[]; 
-    // ignore: null_closures
-    Cv1items getById(int id) => product.firstWhere((element) => element.id == id, orElse: null);
-   Cv1items getByPosition(int pos) =>product[pos];
-  //   Cv1items(
-  //     id: 001,
-  //     name: "ES",
-  //     desc: "Download ES BOOK ",
-  //     size: "10mb",
-  //     sem: "sem",
-  //     durl: "green",
-  //     surl: "url",
-  //     lpurl:"url",
-  //     purl:"url",
-  //     image:
-  //         "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQC7VVXBf-f1ElflLsUcDbJiyTTDAlq9aaHpOWElLM-hleo8bhAHKYQl3VMQ239XKQVx9o5DhZq7Pyxb-X5H9I",
-  //   ),
-  // ];
+  static List<Cv1items> product = [
+    Cv1items(
+        id: 8,
+        name: "Mathematics",
+        desc: "Computer|I.T",
+        size: "1mb",
+        sem: "Sem-1",
+        durl: "https://drive.google.com/uc?export=download&id=",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1KmhMdlKGFQdER6JRijvp3Cpb11g70atU",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/008.png"),
+    Cv1items(
+        id: 14,
+        name: "Communication Skills in English",
+        desc: "All branch",
+        size: "10mb",
+        sem: "Sem-1",
+        durl:
+            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1zAotD83vv-DYvYdXrPESa9-qB9Aw_nnu",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/014.png"),
+    Cv1items(
+        id: 3,
+        name: "Applied Physics",
+        desc: "Mechanical-Civil ",
+        size: "10mb",
+        sem: "Sem-1",
+        durl: "0",
+        surl:
+            "https://drive.google.com/uc?export=download&id=14VmrGnBWtZaEh4tG3KZkR1dQ1uxiOW9H",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1-YnFtxuhrNyOyRuvVSZCUU8CBc8EypuK/",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/003.png"),
+    Cv1items(
+        id: 21,
+        name: "Basic Engineering Drawing and Graphics ",
+        desc: "Civil ",
+        size: "10mb",
+        sem: "Sem-1",
+        durl: "0",
+        surl:
+            "https://drive.google.com/uc?export=download&id=180YJ5FJIXyq4y_KykNibdeDef02FJ8Rw",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1HuoKCpeN2WZ8o48yw5jbsAzUvnUXD4rT",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/021.png")
+  ];
 }
 
 class Cv1items {

@@ -9,17 +9,13 @@ import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
 import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
-import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
-import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
 import 'package:khudkibook/pages/tm.dart';
-import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 import 'package:khudkibook/widget/floatingbtn.dart';
 import 'package:khudkibook/widget/themeChange.dart';
 import 'package:provider/provider.dart';
-
 import 'package:velocity_x/velocity_x.dart';
 
 class Cv1HomePage extends StatefulWidget {
@@ -31,20 +27,20 @@ class _Cv1HomePageState extends State<Cv1HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    // loadData();
   }
 
-  loadData() async {
-    final dataJson = await rootBundle.loadString(
-        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cv/cv1.json");
-    final decodData = jsonDecode(dataJson);
+  // loadData() async {
+  //   final dataJson = await rootBundle.loadString(
+  //       "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cv/cv1.json");
+  //   final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["cv1prododucts"];
-    Cv1Model.product = List.from(productData)
-        .map<Cv1items>((It) => Cv1items.fromMap(It))
-        .toList();
-    setState(() {});
-  }
+  //   var productData = decodData["cv1prododucts"];
+  //   Cv1Model.product = List.from(productData)
+  //       .map<Cv1items>((It) => Cv1items.fromMap(It))
+  //       .toList();
+  //   setState(() {});
+  // }
 
   @override
   Widget build(BuildContext context) {

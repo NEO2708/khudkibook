@@ -2,24 +2,55 @@
 import 'dart:convert';
 
 class Cmp2Model {
-  static List<Cmp2items> product=[]; 
-    // ignore: null_closures
-    Cmp2items getById(int id) => product.firstWhere((element) => element.id == id, orElse: null);
-   Cmp2items getByPosition(int pos) =>product[pos];
-  //   Cmp2items(
-  //     id: 001,
-  //     name: "ES",
-  //     desc: "Download ES BOOK ",
-  //     size: "10mb",
-  //     sem: "sem",
-  //     durl: "green",
-  //     surl: "url",
-  //     lpurl:"url",
-  //     purl:"url",
-  //     image:
-  //         "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQC7VVXBf-f1ElflLsUcDbJiyTTDAlq9aaHpOWElLM-hleo8bhAHKYQl3VMQ239XKQVx9o5DhZq7Pyxb-X5H9I",
-  //   ),
-  // ];
+  static List<Cmp2items> product=[
+  
+             Cmp2items(
+            id: 22,
+            name: "Engineering Mathematics",
+            desc: "Computer | I.T | Electrical ",
+            size: "10mb",
+            sem: "Sem-1",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1PYPTgJITH-65K29Oyz7CSY0lY_2wV2mN",
+            lpurl: "https://drive.google.com/uc?export=download&id=1JC8fR0liC9WTFaetIltBzV9Dq1ytjIwD",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/022.png"),
+              Cmp2items(
+            id: 19,
+            name: "Physics",
+            desc: "I.t | Computer | Electrical",
+            size: "10mb",
+            sem: "Sem-2",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1W0noHZIqpJPotqHlItFUNMEBVs8lLVq4",
+            lpurl: "https://drive.google.com/uc?export=download&id=1wWRidccr_V4a7J_Mn_uYMUai38_SnQ7a",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/019.png"),
+            Cmp2items(
+            
+            id: 29,
+            name: "Basic Object Oriented Programming",
+            desc: "Computer",
+            size: "10mb",
+            sem: "Sem-2",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1sj5WLS3CBXDEoC961gFyddpVlULIbcUn",
+            lpurl: "https://drive.google.com/uc?export=download&id=193LGElNcegMmn27cXsML2O3EeYleAuBw",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/029.png"),
+            Cmp2items(
+            id: 4,
+            name: "Basic of Digital Electronics",
+            desc: "Computer ",
+            size: "10mb",
+            sem: "2nd-Sem",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=14MZpC-GiXQf4Hdk58YAru1pe6dB1T3eM",
+            lpurl: "https://drive.google.com/uc?export=download&id=1mT76SmtMYJHcRpTUEHnnYl2NeLE5pkLX",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/004.png")
+
+  ];
 }
 
 class Cmp2items {

@@ -34,20 +34,20 @@ class _Me1HomePageState extends State<Me1HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    // loadData();
   }
 
-  loadData() async {
-    final dataJson = await rootBundle.loadString(
-        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/me/me1.json");
-    final decodData = jsonDecode(dataJson);
+  // loadData() async {
+  //   final dataJson = await rootBundle.loadString(
+  //       "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/me/me1.json");
+  //   final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["me1prododucts"];
-    Me1Model.product = List.from(productData)
-        .map<Me1items>((It) => Me1items.fromMap(It))
-        .toList();
-    setState(() {});
-  }
+  //   var productData = decodData["me1prododucts"];
+  //   Me1Model.product = List.from(productData)
+  //       .map<Me1items>((It) => Me1items.fromMap(It))
+  //       .toList();
+  //   setState(() {});
+  // }
 
   @override
   Widget build(BuildContext context) {

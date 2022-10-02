@@ -24,7 +24,7 @@ class _Cmp1HomePageState extends State<Cmp1HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    // loadData();
   }
 
   loadData() async {

@@ -28,7 +28,7 @@ class _El1HomePageState extends State<El1HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    // loadData();
   }
 
   loadData() async {

@@ -36,7 +36,7 @@ class _Me2HomePageState extends State<Me2HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    // loadData();
   }
 
   loadData() async {

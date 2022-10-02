@@ -6,12 +6,8 @@ import 'dart:html';
 // import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
-import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
 import 'package:khudkibook/MainPages/Computer/sem2/cmp2model.dart';
 import 'package:khudkibook/MainPages/Computer/sem2/getcmp2.dart';
-import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
-import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/homepage.dart';
 import 'package:khudkibook/pages/tm.dart';
@@ -33,20 +29,20 @@ class _Cmp2HomePageState extends State<Cmp2HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    // loadData();
   }
 
-  loadData() async {
-    final dataJson = await rootBundle.loadString(
-        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cmp/cmp2.json");
-    final decodData = jsonDecode(dataJson);
+  // loadData() async {
+  //   final dataJson = await rootBundle.loadString(
+  //       "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cmp/cmp2.json");
+  //   final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["cmp2prododucts"];
-    Cmp2Model.product = List.from(productData)
-        .map<Cmp2items>((It) => Cmp2items.fromMap(It))
-        .toList();
-    setState(() {});
-  }
+  //   var productData = decodData["cmp2prododucts"];
+  //   Cmp2Model.product = List.from(productData)
+  //       .map<Cmp2items>((It) => Cmp2items.fromMap(It))
+  //       .toList();
+  //   setState(() {});
+  // }
 
   @override
   Widget build(BuildContext context) {

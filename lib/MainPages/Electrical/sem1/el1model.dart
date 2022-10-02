@@ -2,23 +2,57 @@
 import 'dart:convert';
 
 class El1Model {
-  static List<El1items> product=[]; 
-    El1items getById(int id) => product.firstWhere((element) => element.id == id);
-   El1items getByPosition(int pos) =>product[pos];
-  //   El1items(
-  //     id: 001,
-  //     name: "ES",
-  //     desc: "Download ES BOOK ",
-  //     size: "10mb",
-  //     sem: "sem",
-  //     durl: "green",
-  //     surl: "url",
-  //     lpurl:"url",
-  //     purl:"url",
-  //     image:
-  //         "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQC7VVXBf-f1ElflLsUcDbJiyTTDAlq9aaHpOWElLM-hleo8bhAHKYQl3VMQ239XKQVx9o5DhZq7Pyxb-X5H9I",
-  //   ),
-  // ];
+  static List<El1items> product=[
+    El1items(
+      id: 8,
+        name: "Mathematics",
+        desc: "Computer|I.T",
+        size: "1mb",
+        sem: "Sem-1",
+        durl: "https://drive.google.com/uc?export=download&id=",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1KmhMdlKGFQdER6JRijvp3Cpb11g70atU",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/008.png"),
+        El1items(
+        id: 14,
+        name: "Communication Skills in English",
+        desc: "All branch",
+        size: "10mb",
+        sem: "Sem-1",
+        durl:
+            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1zAotD83vv-DYvYdXrPESa9-qB9Aw_nnu",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/014.png"),
+        El1items(
+            id: 20,
+            name: "D C Circuits ",
+            desc: "Electrical",
+            size: "10mb",
+            sem: "Sem-1",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1MPRHsKLDa07obiOvRSRsV_oKuwTAljyu",
+            lpurl: "https://drive.google.com/uc?export=download&id=1Or5PN5Bpm1CVaJIQBqmhVlsKvlW6M3Vc",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/020.png"),
+            El1items(
+            id: 15,
+            name: "Engineering Chemistry",
+            desc: "Electrical",
+            size: "10mb",
+            sem: "Sem-1 & 2",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=10T6oqf985UpnU4fyS5jeHoQK8j2G7ou7",
+            lpurl: "https://drive.google.com/uc?export=download&id=1pBtjcsATXq9Ba-LdSPrcEjZGrSHsmqDE",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/015.png")
+  ];
 }
 
 class El1items {

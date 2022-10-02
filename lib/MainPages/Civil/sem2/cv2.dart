@@ -29,7 +29,7 @@ class _Cv2HomePageState extends State<Cv2HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
+    // loadData();
   }
 
   loadData() async {

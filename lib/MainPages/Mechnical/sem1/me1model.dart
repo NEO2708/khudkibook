@@ -2,23 +2,61 @@
 import 'dart:convert';
 
 class Me1Model {
-  static List<Me1items> product=[]; 
-    Me1items getById(int id) => product.firstWhere((element) => element.id == id);
-   Me1items getByPosition(int pos) =>product[pos];
-  //   Me1items(
-  //     id: 001,
-  //     name: "ES",
-  //     desc: "Download ES BOOK ",
-  //     size: "10mb",
-  //     sem: "sem",
-  //     durl: "green",
-  //     surl: "url",
-  //     lpurl:"url",
-  //     purl:"url",
-  //     image:
-  //         "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQC7VVXBf-f1ElflLsUcDbJiyTTDAlq9aaHpOWElLM-hleo8bhAHKYQl3VMQ239XKQVx9o5DhZq7Pyxb-X5H9I",
-  //   ),
-  // ];
+  static List<Me1items> product = [
+    Me1items(
+        id: 8,
+        name: "Mathematics",
+        desc: "All Branch",
+        size: "1mb",
+        sem: "Sem-1",
+        durl: "https://drive.google.com/uc?export=download&id=",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1KmhMdlKGFQdER6JRijvp3Cpb11g70atU",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/008.png"),
+    Me1items(
+        id: 14,
+        name: "Communication Skills in English",
+        desc: "All branch",
+        size: "10mb",
+        sem: "Sem-1",
+        durl:
+            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1zAotD83vv-DYvYdXrPESa9-qB9Aw_nnu",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/014.png"),
+    Me1items(
+        id: 16,
+        name: "Engineering Drawing",
+        desc: "Mechanical",
+        size: "10mb",
+        sem: "Sem-1",
+        durl:
+            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+        lpurl: "https://drive.google.com/uc?export=download&id=",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/016.png"),
+    Me1items(
+        id: 3,
+        name: "Applied Physics",
+        desc: "Mechanical | Civil ",
+        size: "10mb",
+        sem: "Sem-1",
+        durl:
+            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+        lpurl: "https://drive.google.com/uc?export=download&id=",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/003.png")
+  ];
 }
 
 class Me1items {

@@ -2,24 +2,69 @@
 import 'dart:convert';
 
 class Cmp1Model {
-  static List<Cmp1items> product=[]; 
-    // ignore: null_closures
-    Cmp1items getById(int id) => product.firstWhere((element) => element.id == id, orElse: null);
-   Cmp1items getByPosition(int pos) =>product[pos];
-  //   Cmp1items(
-  //     id: 001,
-  //     name: "ES",
-  //     desc: "Download ES BOOK ",
-  //     size: "10mb",
-  //     sem: "sem",
-  //     durl: "green",
-  //     surl: "url",
-  //     lpurl:"url",
-  //     purl:"url",
-  //     image:
-  //         "http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQC7VVXBf-f1ElflLsUcDbJiyTTDAlq9aaHpOWElLM-hleo8bhAHKYQl3VMQ239XKQVx9o5DhZq7Pyxb-X5H9I",
-  //   ),
-  // ];
+  static List<Cmp1items> product=[
+    Cmp1items(
+     id: 8,
+        name: "Mathematics",
+        desc: "Computer|I.T",
+        size: "1mb",
+        sem: "Sem-1",
+        durl: "https://drive.google.com/uc?export=download&id=",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1KmhMdlKGFQdER6JRijvp3Cpb11g70atU",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/008.png"),
+         Cmp1items(
+        id: 14,
+        name: "Communication Skills in English",
+        desc: "All branch",
+        size: "10mb",
+        sem: "Sem-1",
+        durl:
+            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+        surl:
+            "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
+        lpurl:
+            "https://drive.google.com/uc?export=download&id=1zAotD83vv-DYvYdXrPESa9-qB9Aw_nnu",
+        purl: "https://drive.google.com/uc?export=download&id=",
+        image: "https://neo2708.github.io/pic.github.io/014.png"),
+        Cmp1items(
+          
+            id: 2,
+            name: "Basic Computer Programming",
+            desc: "Computer",
+            size: "10mb",
+            sem: "Sem-1",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1YJOdjFDQIWum4ta1LFbJ-2glJ_VmqK4d",
+            lpurl: "https://drive.google.com/uc?export=download&id=1Xq75NxoFqf_VNMuaYIryxK4QRy5sZqbm",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/002.png"),
+            Cmp1items(
+            id: 18,
+            name: "Fundamentals of Electricals and Electronics",
+            desc: "Computer ",
+            size: "10mb",
+            sem: "Sem-1",
+            durl: "https://drive.google.com/uc?export=download&id=",
+            surl: "https://drive.google.com/uc?export=download&id=1TgDIb3zXDdlK5-h_cKNPE8jC-uJxxEF7",
+            lpurl: "https://drive.google.com/uc?export=download&id=17ep_AMwRRvQ7E0S8M83ftBaCSMaJHZWk",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/018.png"),
+            Cmp1items(
+            id: 5,
+            name: "Environment and Sustainability",
+            desc: "Computer ",
+            size: "10mb",
+            sem: "Sem-1",
+            durl: "https://drive.google.com/uc?export=download&id=19mG9PrcAhBF_V7PErUq_l3aMNtlvDdyk",
+            surl: "https://drive.google.com/uc?export=download&id=1gFh42jzIkzL4C3snjupJA1ylxCI5OTp0",
+            lpurl: "https://drive.google.com/uc?export=download&id=1Td0cEXGFMpQT97mkauauyE2yBhwG926n",
+            purl: "https://drive.google.com/uc?export=download&id=",
+            image: "https://neo2708.github.io/pic.github.io/005.png")
+  ];
 }
 
 class Cmp1items {

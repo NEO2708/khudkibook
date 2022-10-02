@@ -12,6 +12,7 @@ import 'package:snippet_coder_utils/FormHelper.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import 'MainPages/Computer/sem1/cmp1.dart';
+import 'MainPages/Computer/sem2/cmp2.dart';
 import 'MainPages/It/sem1/it1.dart';
 
 
@@ -153,7 +154,7 @@ class _DropDownPageState extends State<DropDownPage> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) =>  Cmp1HomePage(),
+                          builder: (context) =>  Cmp2HomePage(),
                         ));
                   }
               //     if (semId == "30") {
