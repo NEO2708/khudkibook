@@ -2,13 +2,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1.dart';
 import 'package:khudkibook/dropdown.dart';
-import 'package:khudkibook/pages/login.dart';
 import 'package:khudkibook/pages/profil.dart';
 import 'package:khudkibook/pages/tm.dart';
 import 'package:khudkibook/widget/theme.dart';
 import 'package:provider/provider.dart';
 import 'pages/chgThems.dart';
-import 'pages/homepage.dart';
 import 'utils/routes.dart';
 
 void main()  {
@@ -56,7 +54,6 @@ class MyHp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             initialRoute: MyRoutes.homePage,
             routes: {
-              MyRoutes.homeRoute: (context) => HomePage(),
               MyRoutes.chgTheme: (context) => const ChgTheme(),
               MyRoutes.home: (context) =>  It1HomePage(),
 

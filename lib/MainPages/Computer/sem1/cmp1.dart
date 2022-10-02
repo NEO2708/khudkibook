@@ -5,13 +5,13 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/Computer/sem1/cmp1model.dart';
-import 'package:khudkibook/pages/homepage.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 import 'package:khudkibook/widget/themeChange.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
+import '../../../screens/heade.dart';
 import '../../../widget/floatingbtn.dart';
 import 'getcmp1.dart';
 

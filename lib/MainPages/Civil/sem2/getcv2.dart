@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem2/cv2model.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
-import 'package:khudkibook/models/app.dart';
 
 // ignore: depend_on_referenced_packages
 import 'package:velocity_x/velocity_x.dart';
@@ -60,7 +59,7 @@ class _GetIt1BooksState extends State<GetCv2Books> {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            widget.books.desc.text.xl2
+                            widget.books.desc.text.xl3
                                 .color(context.primaryColor)
                                 .bold
                                 .headline1(context)
@@ -68,7 +67,7 @@ class _GetIt1BooksState extends State<GetCv2Books> {
                                 .p(10),
                             widget.books.sem.text
                                 .color(context.primaryColor)
-                                .extraBold
+                                .bold
                                 .xl3
                                 .make()
                           ],
@@ -106,9 +105,9 @@ class _GetIt1BooksState extends State<GetCv2Books> {
                                               .make()));
                                 }
                               })),
-                              child: "Full-Book"
+                              child: "Book"
                                   .text
-                                  .xl4
+                                  .xl3
                                   .color(context.primaryColor)
                                   .make(),
                             ).h(40).w32(context),
@@ -149,7 +148,8 @@ class _GetIt1BooksState extends State<GetCv2Books> {
                               child: "Syllabus"
                                   .text
                                   .color(context.primaryColor)
-                                  .xl4
+                                  
+                                  .xl2
                                   .make(),
                             ).h(40).w32(context),
                           ],
@@ -287,7 +287,7 @@ class _GetIt1BooksState extends State<GetCv2Books> {
                                                         .make()));
                                       }
                                     }),
-                                    child: "Book PDF"
+                                    child: "Book "
                                         .text
                                         .bold
                                         .xl3

@@ -11,9 +11,6 @@ import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
 import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
-import 'package:khudkibook/models/app.dart';
-import 'package:khudkibook/pages/get.dart';
-import 'package:khudkibook/pages/homepage.dart';
 import 'package:khudkibook/pages/tm.dart';
 import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';
@@ -23,6 +20,8 @@ import 'package:khudkibook/widget/themeChange.dart';
 import 'package:provider/provider.dart';
 
 import 'package:velocity_x/velocity_x.dart';
+
+import '../../../screens/heade.dart';
 
 class It1HomePage extends StatefulWidget {
   @override

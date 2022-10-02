@@ -8,15 +8,13 @@ import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/el1model.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/getel1.dart';
 
-import 'package:khudkibook/dropdown.dart';
-import 'package:khudkibook/pages/homepage.dart';
-
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 import 'package:khudkibook/widget/themeChange.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
+import '../../../screens/heade.dart';
 import '../../../widget/floatingbtn.dart';
 
 class El1HomePage extends StatefulWidget {
