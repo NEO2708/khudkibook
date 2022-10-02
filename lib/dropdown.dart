@@ -15,8 +15,6 @@ import 'MainPages/Computer/sem1/cmp1.dart';
 import 'MainPages/Computer/sem2/cmp2.dart';
 import 'MainPages/It/sem1/it1.dart';
 
-
-
 class DropDownPage extends StatefulWidget {
   const DropDownPage({super.key});
 
@@ -56,18 +54,15 @@ class _DropDownPageState extends State<DropDownPage> {
       data: onlyLight,
       child: SafeArea(
           child: Scaffold(
-            
-            
+
               // appBar: AppBar(
               //   title: "Select All Fields".text.xl3.color(context.primaryColor).make(),
               //   backgroundColor: Colors.transparent,
               //   elevation: 0.0,
               // ),
               body: Padding(
-                
         padding: const EdgeInsets.all(8.0),
         child: Center(
-          
           child: Column(children: [
             Image.network(
                     "https://cdn2.iconfinder.com/data/icons/diwali-2027/32/shree_sree_hindu_gita_book_holy_religion-512.png")
@@ -110,170 +105,253 @@ class _DropDownPageState extends State<DropDownPage> {
             const SizedBox(
               height: 20,
             ),
-            InkWell(onTap: () {
-              // I.T
-              if (subjectId == "1") {
-                if (semId == "10") {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => It1HomePage(),
-                      ));
-                }
-                if (semId == "20") {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) =>  It2HomePage(),
-                      ));
-                }
-                // if (semId == "30") {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //         builder: (context) => const ItPage3(),
-                //       ));
-                // }
-                // if (semId == "40") {}
-                // if (semId == "50") {}
-                // if (semId == "60") {}
-                // if (semId == "70") {}
-                // if (semId == "50") {}
-              }
-    
-                // Computer
-                if (subjectId == "2") {
-                  if (semId == "10") {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>  Cmp1HomePage(),
-                        ));
-                  }
-                  if (semId == "20") {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>  Cmp2HomePage(),
-                        ));
-                  }
-              //     if (semId == "30") {
-              //       Navigator.push(
-              //           context,
-              //           MaterialPageRoute(
-              //             builder: (context) => const CmpPage3(),
-              //           ));
-              //     }
-              //     if (semId == "40") {}
-              //     if (semId == "50") {}
-              //     if (semId == "60") {}
-              //     if (semId == "70") {}
-              //     if (semId == "50") {}
-               }
-                // Electrical
-                if (subjectId == "3") {
-                  if (semId == "10") {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>  El1HomePage(),
-                        ));
-                  }
-                  if (semId == "20") {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>  El2HomePage(),
-                        ));
-                  }
-              //     if (semId == "30") {
-              //       Navigator.push(
-              //           context,
-              //           MaterialPageRoute(
-              //             builder: (context) => const ElePage3(),
-              //           ));
-              //     }
-              //     if (semId == "40") {}
-              //     if (semId == "50") {}
-              //     if (semId == "60") {}
-              //     if (semId == "70") {}
-              //     if (semId == "50") {}
-               }
-                // Civil
-                if (subjectId == "4") {
-                  if (semId == "10") {
-                    // ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                    //     content: "Not Avilable Yet, Check Agin Later"
-                    //         .text.xl2.red500
-                    //         .make()));
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>  Cv1HomePage(),
-                        ));
-                  }
-                  if (semId == "20") {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) =>  Cv2HomePage(),
-                        ));
-                  }
-              //     if (semId == "30") {
-              //       Navigator.push(
-              //           context,
-              //           MaterialPageRoute(
-              //             builder: (context) => const CivPage3(),
-              //           ));
-              //     }
-              //     if (semId == "40") {}
-              //     if (semId == "50") {}
-              //     if (semId == "60") {}
-              //     if (semId == "70") {}
-              //     if (semId == "50") {}
-                 }
-              // Mechanical
-              if (subjectId == "5") {
-                if (semId == "10") {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Me1HomePage(),
-                      ));
-                }
+            InkWell(
+                onTap: () {
+                  // I.T
+                  if (subjectId == "1") {
+                    if (semId == "10") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => It1HomePage(),
+                          ));
+                    }
                     if (semId == "20") {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) =>  Me2HomePage(),
+                            builder: (context) => It2HomePage(),
                           ));
                     }
-                //     if (semId == "30") {
-                //       Navigator.push(
-                //           context,
-                //           MaterialPageRoute(
-                //             builder: (context) =>  Me1HomePage(),
-                //           ));
-                //     }
-                //     if (semId == "40") {}
-                //     if (semId == "50") {}
-                //     if (semId == "60") {}
-                //     if (semId == "70") {}
-                //     if (semId == "50") {}
-                //   }
-                // },
-              }},
-                child:
-                Container(
+                    if (semId == "30") {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: "Not Avilable Yet, Check Agin Later"
+                              .text
+                              .xl2
+                              .red500
+                              .make()));
+                    }
+                    if (semId == "40") {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: "Not Avilable Yet, Check Agin Later"
+                              .text
+                              .xl2
+                              .red500
+                              .make()));
+                    }
+                    if (semId == "50") {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: "Not Avilable Yet, Check Agin Later"
+                              .text
+                              .xl2
+                              .red500
+                              .make()));
+                    }
+                    if (semId == "60") {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: "Not Avilable Yet, Check Agin Later"
+                              .text
+                              .xl2
+                              .red500
+                              .make()));
+                    }
+                    if (semId == "70") {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: "Not Avilable Yet, Check Agin Later"
+                              .text
+                              .xl2
+                              .red500
+                              .make()));
+                    }
+                    if (semId == "50") {
+                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                          content: "Not Avilable Yet, Check Agin Later"
+                              .text
+                              .xl2
+                              .red500
+                              .make()));
+                    }
+                  }
+
+                  // Computer
+                  if (subjectId == "2") {
+                    if (semId == "10") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Cmp1HomePage(),
+                          ));
+                    }
+                    if (semId == "20") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Cmp2HomePage(),
+                          ));
+                    }
+                        if (semId == "30") {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));
+                        }
+                        if (semId == "40") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "50") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "60") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "70") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "50") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                  }
+                  // Electrical
+                  if (subjectId == "3") {
+                    if (semId == "10") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => El1HomePage(),
+                          ));
+                    }
+                    if (semId == "20") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => El2HomePage(),
+                          ));
+                    }
+                        if (semId == "30") {
+                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));
+                        }
+                        if (semId == "40") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "60") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "70") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+
+                  }
+                  // Civil
+                  if (subjectId == "4") {
+                    if (semId == "10") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Cv1HomePage(),
+                          ));
+                    }
+                    if (semId == "20") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Cv2HomePage(),
+                          ));
+                    }
+                        if (semId == "30") {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));
+                        }
+                        if (semId == "40") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "60") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "70") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                  }
+                  // Mechanical
+                  if (subjectId == "5") {
+                    if (semId == "10") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Me1HomePage(),
+                          ));
+                    }
+                    if (semId == "20") {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Me2HomePage(),
+                          ));
+                    }
+                        if (semId == "30") {
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));
+                        }
+                        if (semId == "40") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "60") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "70") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                        content: "Not Avilable Yet, Check Agin Later"
+                            .text.xl2.red500
+                            .make()));}
+                      }
+                
+                },
+                child: Container(
                   height: 50,
                   width: 300,
                   decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(50)),
                   child: "Submit".text.color(Colors.white).xl5.center.make(),
-                ).backgroundColor(Colors.white)
-                
-            )
+                ).backgroundColor(Colors.white))
           ]).backgroundColor(Colors.white).w(500),
         ),
       ))),
@@ -281,8 +359,4 @@ class _DropDownPageState extends State<DropDownPage> {
   }
 }
 
-
-
-final ThemeData onlyLight= ThemeData(
-  brightness: Brightness.light
-);
+final ThemeData onlyLight = ThemeData(brightness: Brightness.light);
