@@ -6,21 +6,19 @@ import 'dart:html';
 // import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
-import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/el1model.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/getel1.dart';
 import 'package:khudkibook/MainPages/Electrical/sem2/el2model.dart';
 import 'package:khudkibook/MainPages/Electrical/sem2/getel2.dart';
-import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
-import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/tm.dart';
 import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 import 'package:khudkibook/widget/floatingbtn.dart';
+import 'package:khudkibook/widget/icon.dart';
 import 'package:khudkibook/widget/themeChange.dart';
+import 'package:khudkibook/widget/validated.dart';
 import 'package:provider/provider.dart';
 
 import 'package:velocity_x/velocity_x.dart';
@@ -36,19 +34,6 @@ class _El2HomePageState extends State<El2HomePage> {
   @override
   void initState() {
     super.initState();
-    loadData();
-  }
-
-  loadData() async {
-    final dataJson = await rootBundle.loadString(
-        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/el/el2.json");
-    final decodData = jsonDecode(dataJson);
-
-    var productData = decodData["el2prododucts"];
-    El2Model.product = List.from(productData)
-        .map<El2items>((It) => El2items.fromMap(It))
-        .toList();
-    setState(() {});
   }
 
   @override
@@ -165,30 +150,9 @@ class _MyBooksState extends State<MyBooks> {
                 ElevatedButton(
                         style: ButtonStyle(),
                         onPressed: ((() {
-                          if (widget.books.durl == "0") {
-                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                              duration: Duration(seconds: 1),
-                              content: "Not Available Check Again Later "
-                                  .text
-                                  .red500
-                                  .make(),
-                            ));
-                          } else {
-                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                            downloadfile(widget.books.durl);
-
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                                duration: Duration(seconds: 1),
-                                content: "Your Download is Started "
-                                    .text
-                                    .center
-                                    .xl
-                                    .green500
-                                    .make()));
-                          }
+                          validator(widget, context);
                         })),
-                        child: Icon(Icons.download)
+                        child: MyIcon()
                         // "Download".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make()
                         )
                     .wPCT(
@@ -213,18 +177,19 @@ class _MyBooksState extends State<MyBooks> {
   }
 }
 
-downloadfile(url) {
-  AnchorElement anchorElement = AnchorElement(href: url);
-  anchorElement.download = "";
-  anchorElement.click();
-}
+
 
 class MyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 30,
-      child: "Electrical | Sem-2".text.color(context.primaryColor).center.xl3.make(),
+      child: "Electrical | Sem-2"
+          .text
+          .color(context.primaryColor)
+          .center
+          .xl3
+          .make(),
     );
   }
 }

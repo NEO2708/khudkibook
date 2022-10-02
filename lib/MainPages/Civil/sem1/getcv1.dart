@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem2/cv2model.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
+import 'package:khudkibook/widget/validated.dart';
 
 // ignore: depend_on_referenced_packages
 import 'package:velocity_x/velocity_x.dart';
@@ -77,80 +78,24 @@ class _GetIt1BooksState extends State<GetCv1Books> {
                           children: [
                             // Full-Book Btn
                             ElevatedButton(
-                              onPressed: ((() {
-                                if (widget.books.durl == "0") {
-                                  ScaffoldMessenger.of(context)
-                                      .hideCurrentSnackBar();
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(SnackBar(
-                                    duration: const Duration(seconds: 1),
-                                    content: "Not Available Check Again Later "
-                                        .text
-                                        .red500
-                                        .make(),
-                                  ));
-                                } else {
-                                  ScaffoldMessenger.of(context)
-                                      .hideCurrentSnackBar();
-                                  downloadfile(widget.books.durl);
-
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                          duration: const Duration(seconds: 1),
-                                          content: "Your Download is Started "
-                                              .text
-                                              .center
-                                              .xl
-                                              .green500
-                                              .make()));
-                                }
-                              })),
-                              child: "Full-Book"
-                                  .text
-                                  .xl4
-                                  .color(context.primaryColor)
-                                  .make(),
-                            ).h(40).w32(context),
+                                    onPressed: ((() {
+                                      validator(widget, context);
+                                    })),
+                                    child: BookText())
+                                .h(40)
+                                .w32(context),
                             const SizedBox(
                               width: 10,
                             ),
 
                             // syllabus btn
                             ElevatedButton(
-                              onPressed: ((() {
-                                if (widget.books.surl == "0") {
-                                  ScaffoldMessenger.of(context)
-                                      .hideCurrentSnackBar();
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(SnackBar(
-                                    duration: const Duration(seconds: 1),
-                                    content: "Not Available Check Again Later "
-                                        .text
-                                        .red500
-                                        .make(),
-                                  ));
-                                } else {
-                                  downloadfile(widget.books.surl);
-                                  ScaffoldMessenger.of(context)
-                                      .hideCurrentSnackBar();
-
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                          duration: const Duration(seconds: 2),
-                                          content: "Your Download is Started "
-                                              .text
-                                              .center
-                                              .xl
-                                              .green500
-                                              .make()));
-                                }
-                              })),
-                              child: "Syllabus"
-                                  .text
-                                  .color(context.primaryColor)
-                                  .xl4
-                                  .make(),
-                            ).h(40).w32(context),
+                                    onPressed: ((() {
+                                      validator(widget, context);
+                                    })),
+                                    child: MySyllabus())
+                                .h(40)
+                                .w32(context),
                           ],
                         ),
                         const SizedBox(
@@ -160,40 +105,12 @@ class _GetIt1BooksState extends State<GetCv1Books> {
                           children: [
                             // Last Year Paper btn
                             ElevatedButton(
-                              onPressed: ((() {
-                                if (widget.books.lpurl == "0") {
-                                  ScaffoldMessenger.of(context)
-                                      .hideCurrentSnackBar();
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(SnackBar(
-                                    duration: const Duration(milliseconds: 1),
-                                    content: "Not Available Check Again Later "
-                                        .text
-                                        .red500
-                                        .make(),
-                                  ));
-                                } else {
-                                  ScaffoldMessenger.of(context)
-                                      .hideCurrentSnackBar();
-                                  downloadfile(widget.books.lpurl);
-
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                          duration: const Duration(seconds: 2),
-                                          content: "Your Download is Started "
-                                              .text
-                                              .center
-                                              .xl
-                                              .green500
-                                              .make()));
-                                }
-                              })),
-                              child: "Last Sem Paper "
-                                  .text
-                                  .xl4
-                                  .color(context.primaryColor)
-                                  .make(),
-                            ).h(40).w64(context),
+                                    onPressed: ((() {
+                                      validator(widget, context);
+                                    })),
+                                    child: lsm())
+                                .h(40)
+                                .w64(context),
                             const SizedBox(
                               height: 10,
                             ),
@@ -250,48 +167,15 @@ class _GetIt1BooksState extends State<GetCv1Books> {
                                 .make()
                           ],
                         ),
-
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             // Book btn
                             ElevatedButton(
                                     onPressed: (() {
-                                      if (widget.books.durl == "0") {
-                                        ScaffoldMessenger.of(context)
-                                            .hideCurrentSnackBar();
-                                        ScaffoldMessenger.of(context)
-                                            .showSnackBar(SnackBar(
-                                          duration: const Duration(milliseconds: 1),
-                                          content:
-                                              "Not Available Check Again Later "
-                                                  .text
-                                                  .red500
-                                                  .make(),
-                                        ));
-                                      } else {
-                                        ScaffoldMessenger.of(context)
-                                            .hideCurrentSnackBar();
-                                        downloadfile(widget.books.durl);
-
-                                        ScaffoldMessenger.of(context)
-                                            .showSnackBar(SnackBar(
-                                                duration: const Duration(seconds: 2),
-                                                content:
-                                                    "Your Download is Started "
-                                                        .text
-                                                        .center
-                                                        .xl
-                                                        .green500
-                                                        .make()));
-                                      }
+                                      validator(widget, context);
                                     }),
-                                    child: "Book PDF"
-                                        .text
-                                        .bold
-                                        .xl3
-                                        .color(context.primaryColor)
-                                        .make())
+                                    child: BookText())
                                 .h(40)
                                 .w32(context),
                             const SizedBox(
@@ -301,41 +185,9 @@ class _GetIt1BooksState extends State<GetCv1Books> {
                             // Syllabus
                             ElevatedButton(
                                     onPressed: (() {
-                                      if (widget.books.surl == "0") {
-                                        ScaffoldMessenger.of(context)
-                                            .hideCurrentSnackBar();
-                                        ScaffoldMessenger.of(context)
-                                            .showSnackBar(SnackBar(
-                                          duration: const Duration(milliseconds: 1),
-                                          content:
-                                              "Not Available Check Again Later "
-                                                  .text
-                                                  .red500
-                                                  .make(),
-                                        ));
-                                      } else {
-                                        ScaffoldMessenger.of(context)
-                                            .hideCurrentSnackBar();
-                                        downloadfile(widget.books.surl);
-
-                                        ScaffoldMessenger.of(context)
-                                            .showSnackBar(SnackBar(
-                                                duration: const Duration(seconds: 2),
-                                                content:
-                                                    "Your Download is Started "
-                                                        .text
-                                                        .center
-                                                        .xl
-                                                        .green500
-                                                        .make()));
-                                      }
+                                      validator(widget, context);
                                     }),
-                                    child: "Syllabus"
-                                        .text
-                                        .bold
-                                        .xl3
-                                        .color(context.primaryColor)
-                                        .make())
+                                    child: MySyllabus())
                                 .h(40)
                                 .w32(context),
                           ],
@@ -349,38 +201,9 @@ class _GetIt1BooksState extends State<GetCv1Books> {
                             // Last Year Paper btn
                             ElevatedButton(
                               onPressed: ((() {
-                                if (widget.books.lpurl == "0") {
-                                  ScaffoldMessenger.of(context)
-                                      .hideCurrentSnackBar();
-                                  ScaffoldMessenger.of(context)
-                                      .showSnackBar(SnackBar(
-                                    duration: const Duration(milliseconds: 1),
-                                    content: "Not Available Check Again Later "
-                                        .text
-                                        .red500
-                                        .make(),
-                                  ));
-                                } else {
-                                  ScaffoldMessenger.of(context)
-                                      .hideCurrentSnackBar();
-                                  downloadfile(widget.books.lpurl);
-
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                      SnackBar(
-                                          duration: const Duration(seconds: 2),
-                                          content: "Your Download is Started "
-                                              .text
-                                              .center
-                                              .xl2
-                                              .green500
-                                              .make()));
-                                }
+                                validator(widget, context);
                               })),
-                              child: "Last Sem Paper"
-                                  .text
-                                  .xl4
-                                  .color(context.primaryColor)
-                                  .make(),
+                              child:lsm()
                             ).h(40).w40(context),
                             const SizedBox(
                               height: 10,
@@ -395,10 +218,4 @@ class _GetIt1BooksState extends State<GetCv1Books> {
             ),
           );
   }
-}
-
-downloadfile(url) {
-  AnchorElement anchorElement = AnchorElement(href: url);
-  anchorElement.download = "";
-  anchorElement.click();
 }

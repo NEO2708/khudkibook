@@ -8,16 +8,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
+import 'package:khudkibook/MainPages/Civil/sem2/cv2.dart';
 import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
 import 'package:khudkibook/pages/tm.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 import 'package:khudkibook/widget/floatingbtn.dart';
 import 'package:khudkibook/widget/themeChange.dart';
+import 'package:khudkibook/widget/validated.dart';
 import 'package:provider/provider.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 import '../../../screens/heade.dart';
+import '../../../widget/icon.dart';
 
 class Cv1HomePage extends StatefulWidget {
   @override
@@ -28,20 +31,7 @@ class _Cv1HomePageState extends State<Cv1HomePage> {
   @override
   void initState() {
     super.initState();
-    // loadData();
   }
-
-  // loadData() async {
-  //   final dataJson = await rootBundle.loadString(
-  //       "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cv/cv1.json");
-  //   final decodData = jsonDecode(dataJson);
-
-  //   var productData = decodData["cv1prododucts"];
-  //   Cv1Model.product = List.from(productData)
-  //       .map<Cv1items>((It) => Cv1items.fromMap(It))
-  //       .toList();
-  //   setState(() {});
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -157,30 +147,9 @@ class _MyBooksState extends State<MyBooks> {
                 ElevatedButton(
                         style: ButtonStyle(),
                         onPressed: ((() {
-                          if (widget.books.durl == "0") {
-                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                              duration: Duration(seconds: 1),
-                              content: "Not Available Check Again Later "
-                                  .text
-                                  .red500
-                                  .make(),
-                            ));
-                          } else {
-                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                            downloadfile(widget.books.durl);
-
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                                duration: Duration(seconds: 1),
-                                content: "Your Download is Started "
-                                    .text
-                                    .center
-                                    .xl
-                                    .green500
-                                    .make()));
-                          }
+                          validator(widget, context);
                         })),
-                        child: Icon(Icons.download)
+                        child: MyIcon()
                         // "Download".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make()
                         )
                     .wPCT(

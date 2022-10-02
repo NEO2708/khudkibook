@@ -10,7 +10,9 @@ import 'package:khudkibook/MainPages/Electrical/sem1/getel1.dart';
 
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
+import 'package:khudkibook/widget/icon.dart';
 import 'package:khudkibook/widget/themeChange.dart';
+import 'package:khudkibook/widget/validated.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
@@ -30,7 +32,8 @@ class _El1HomePageState extends State<El1HomePage> {
   }
 
   loadData() async {
-    final dataJson = await rootBundle.loadString("/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/el/el1.json");
+    final dataJson = await rootBundle.loadString(
+        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/el/el1.json");
     final decodData = jsonDecode(dataJson);
 
     var productData = decodData["el1prododucts"];
@@ -46,8 +49,7 @@ class _El1HomePageState extends State<El1HomePage> {
 
     return Scaffold(
       appBar: AppBar(
-        actions: [ChangeTheme()
-        ],
+        actions: [ChangeTheme()],
         title: MyHeadIcon(),
 
         backgroundColor: Colors.transparent,
@@ -55,8 +57,7 @@ class _El1HomePageState extends State<El1HomePage> {
         elevation: 0.0,
       ),
       drawer: MyDrawer(),
-        floatingActionButton: MyFloat(),
-
+      floatingActionButton: MyFloat(),
       backgroundColor: context.cardColor,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -159,23 +160,9 @@ class _MyBooksState extends State<MyBooks> {
                 ElevatedButton(
                         style: ButtonStyle(),
                         onPressed: (() {
-                          widget.books.durl.toString();
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                              duration: Duration(seconds: 2),
-                              content:
-                                  "Your Download Must Have Started                        | Check Notification Bar"
-                                      .text
-                                      .center
-                                      .xl
-                                      .green500
-                                      .make()));
+                          validator(widget, context);
                         }),
-                        child: "Full-Book"
-                            .text
-                            .color(Color.fromARGB(255, 30, 24, 16))
-                            .bold
-                            .xl2
-                            .make())
+                        child: MyIcon())
                     .wPCT(
                         context: context, widthPCT: context.isMobile ? 28 : 20)
                     .hPCT(
@@ -198,11 +185,6 @@ class _MyBooksState extends State<MyBooks> {
   }
 }
 
-// downloadfile(url) {
-//   AnchorElement anchorElement = AnchorElement(href: url);
-//   anchorElement.download = "";
-//   anchorElement.click();
-// }
 class MyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -15,6 +15,7 @@ import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
 import 'package:khudkibook/widget/floatingbtn.dart';
 import 'package:khudkibook/widget/themeChange.dart';
+import 'package:khudkibook/widget/validated.dart';
 import 'package:provider/provider.dart';
 
 import 'package:velocity_x/velocity_x.dart';
@@ -31,8 +32,6 @@ class _Cmp2HomePageState extends State<Cmp2HomePage> {
   void initState() {
     super.initState();
   }
-
-  
 
   @override
   Widget build(BuildContext context) {
@@ -148,28 +147,7 @@ class _MyBooksState extends State<MyBooks> {
                 ElevatedButton(
                         style: ButtonStyle(),
                         onPressed: ((() {
-                          if (widget.books.durl == "0") {
-                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                              duration: Duration(seconds: 1),
-                              content: "Not Available Check Again Later "
-                                  .text
-                                  .red500
-                                  .make(),
-                            ));
-                          } else {
-                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                            downloadfile(widget.books.durl);
-
-                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                                duration: Duration(seconds: 1),
-                                content: "Your Download is Started "
-                                    .text
-                                    .center
-                                    .xl
-                                    .green500
-                                    .make()));
-                          }
+                          validator(widget, context);
                         })),
                         child: Icon(Icons.download)
                         // "Download".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make()
@@ -196,18 +174,12 @@ class _MyBooksState extends State<MyBooks> {
   }
 }
 
-downloadfile(url) {
-  AnchorElement anchorElement = AnchorElement(href: url);
-  anchorElement.download = "";
-  anchorElement.click();
-}
-
 class MyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 30,
-      child: "Civil | Sem-1".text.color(context.primaryColor).center.xl3.make(),
+      child: "Computer | Sem-2".text.color(context.primaryColor).center.xl3.make(),
     );
   }
 }
