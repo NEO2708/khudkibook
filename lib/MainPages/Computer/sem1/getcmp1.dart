@@ -82,7 +82,7 @@ class _GetIt1BooksState extends State<GetCmp1Books> {
                                     onPressed: ((() {
                                       validator(widget.books.durl, context);
                                     })),
-                                    child: BookText())
+                                    child: const BookText())
                                 .h(40)
                                 .w32(context),
                             const SizedBox(
@@ -94,7 +94,7 @@ class _GetIt1BooksState extends State<GetCmp1Books> {
                                     onPressed: ((() {
                                       validator(widget.books.surl, context);
                                     })),
-                                    child: MySyllabus())
+                                    child: const MySyllabus())
                                 .h(40)
                                 .w32(context),
                           ],
@@ -109,7 +109,7 @@ class _GetIt1BooksState extends State<GetCmp1Books> {
                                     onPressed: ((() {
                                       validator(widget.books.lpurl, context);
                                     })),
-                                    child: lsm())
+                                    child: const lsm())
                                 .h(40)
                                 .w64(context),
                             const SizedBox(
@@ -177,7 +177,7 @@ class _GetIt1BooksState extends State<GetCmp1Books> {
                                     onPressed: (() {
                                       validator(widget.books.durl, context);
                                     }),
-                                    child: BookText())
+                                    child: const BookText())
                                 .h(40)
                                 .w32(context),
                             const SizedBox(
@@ -189,7 +189,7 @@ class _GetIt1BooksState extends State<GetCmp1Books> {
                                     onPressed: (() {
                                       validator(widget.books.surl, context);
                                     }),
-                                    child: MySyllabus())
+                                    child: const MySyllabus())
                                 .h(40)
                                 .w32(context),
                           ],
@@ -204,7 +204,7 @@ class _GetIt1BooksState extends State<GetCmp1Books> {
                               onPressed: ((() {
                                 validator(widget.books.lpurl, context);
                               })),
-                              child: lsm()
+                              child: const lsm()
                             ).h(40).w40(context),
                             const SizedBox(
                               height: 10,

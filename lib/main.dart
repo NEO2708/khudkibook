@@ -27,11 +27,11 @@ class MyApp extends StatelessWidget {
           future: _initialization,
           builder: ((context, snapshot) {
             if (snapshot.hasError) {
-              print("error");
             }
             if (snapshot.connectionState == ConnectionState.done) {
-              return MyHp();
+              return const MyHp();
             }
+            // ignore: prefer_const_constructors
             return CircularProgressIndicator();
           })),
     );

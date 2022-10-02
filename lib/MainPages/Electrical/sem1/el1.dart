@@ -1,9 +1,7 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first, use_key_in_widget_constructors, duplicate_ignore, unnecessary_string_interpolations, non_constant_identifier_names
 // ignore_for_file: prefer_const_constructors, avoid_types_as_parameter_names
-import 'dart:convert';
 // import 'dart:html';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import 'package:khudkibook/MainPages/Electrical/sem1/el1model.dart';
 import 'package:khudkibook/MainPages/Electrical/sem1/getel1.dart';
@@ -35,6 +33,7 @@ class _El1HomePageState extends State<El1HomePage> {
 
     return Scaffold(
       appBar: AppBar(
+        // ignore: prefer_const_literals_to_create_immutables
         actions: [ChangeTheme()],
         title: MyHeadIcon(),
 

@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:khudkibook/utils/routes.dart';
 import 'package:velocity_x/velocity_x.dart';
 
-// ignore: use_key_in_widget_constructors
+// ignore: use_key_in_widget_constructors, must_be_immutable
 class MyDrawer extends StatelessWidget {
   bool no = false;
   @override
