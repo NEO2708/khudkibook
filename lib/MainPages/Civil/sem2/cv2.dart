@@ -1,24 +1,27 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first, use_key_in_widget_constructors, duplicate_ignore, unnecessary_string_interpolations, non_constant_identifier_names, unused_import
 // ignore_for_file: prefer_const_constructors, avoid_types_as_parameter_names
 import 'dart:convert';
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html';
+// import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
-import 'package:khudkibook/MainPages/Civil/sem2/cv2model.dart';
-import 'package:khudkibook/MainPages/Civil/sem2/getcv2.dart';
-import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
-import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
-import 'package:khudkibook/pages/homepage.dart';
+import 'package:khudkibook/pages/tm.dart';
 import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
+import 'package:khudkibook/widget/floatingbtn.dart';
+import 'package:khudkibook/widget/themeChange.dart';
+import 'package:provider/provider.dart';
 
 import 'package:velocity_x/velocity_x.dart';
 
-import '../../../widget/floatingbtn.dart';
-import '../../../widget/themeChange.dart';
+import '../../../screens/heade.dart';
+import 'cv2model.dart';
+import 'getcv2.dart';
 
 class Cv2HomePage extends StatefulWidget {
   @override
@@ -32,32 +35,30 @@ class _Cv2HomePageState extends State<Cv2HomePage> {
     // loadData();
   }
 
-  loadData() async {
-    final dataJson = await rootBundle.loadString("/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cv/cv2.json");
-    final decodData = jsonDecode(dataJson);
+  // loadData() async {
+  //   final dataJson = await rootBundle.loadString(
+  //       "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/it1.json");
+  //   final decodData = jsonDecode(dataJson);
 
-    var productData = decodData["cv2products"];
-    Cv2Model.product = List.from(productData)
-        .map<Cv2items>((It) => Cv2items.fromMap(It))
-        .toList();
-    setState(() {});
-  }
+  //   var productData = decodData["it1prododucts"];
+  //   Cv2Model.product = List.from(productData)
+  //       .map<Cv2items>((It) => Cv2items.fromMap(It))
+  //       .toList();
+  //   setState(() {});
+  // }
 
   @override
   Widget build(BuildContext context) {
-    // return Consumer(builder: (context, ThemeModel themeNotifier, child) {
-
     return Scaffold(
       appBar: AppBar(
-        actions: const [ChangeTheme()],
         title: MyHeadIcon(),
+        actions: const [ChangeTheme()],
         backgroundColor: Colors.transparent,
         // ignore: prefer_const_constructors
         elevation: 0.0,
       ),
       drawer: MyDrawer(),
       floatingActionButton: MyFloat(),
-
       backgroundColor: context.cardColor,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
@@ -159,20 +160,38 @@ class _MyBooksState extends State<MyBooks> {
                 widget.books.sem.text.extraBold.xl.make(),
                 ElevatedButton(
                         style: ButtonStyle(),
-                        onPressed: (() {
-                          widget.books.durl.toString();
-                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            duration: Duration(seconds: 2),
-                              content: "Your Download Must Have Started                        | Check Notification Bar"
-                                  .text.center.xl.green500
-                                  .make()));
-                        }),
-                        child: "Full-Book".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make())
+                        onPressed: ((() {
+                          if (widget.books.durl == "0") {
+                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                              duration: Duration(seconds: 1),
+                              content: "Not Available Check Again Later "
+                                  .text
+                                  .red500
+                                  .make(),
+                            ));
+                          } else {
+                            ScaffoldMessenger.of(context).hideCurrentSnackBar();
+                            downloadfile(widget.books.durl);
+
+                            ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                                duration: Duration(seconds: 1),
+                                content: "Your Download is Started "
+                                    .text
+                                    .center
+                                    .xl
+                                    .green500
+                                    .make()));
+                          }
+                        })),
+                        child: MyIcon()
+                        // "Download".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make()
+                        )
                     .wPCT(
                         context: context, widthPCT: context.isMobile ? 28 : 20)
                     .hPCT(
                         context: context, heightPCT: context.isMobile ? 4 : 4),
-                widget.books.size.text.underline.blue500.bold.xl.make()
+                // widget.books.size.text.underline.blue500.bold.xl.make()
               ],
             ).pOnly(right: 10)
           ],
@@ -190,11 +209,12 @@ class _MyBooksState extends State<MyBooks> {
   }
 }
 
-// downloadfile(url) {
-//   AnchorElement anchorElement = AnchorElement(href: url);
-//   anchorElement.download = "";
-//   anchorElement.click();
-// }
+downloadfile(url) {
+  AnchorElement anchorElement = AnchorElement(href: url);
+  anchorElement.download = "";
+  anchorElement.click();
+}
+
 class MyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -202,5 +222,14 @@ class MyHeader extends StatelessWidget {
       height: 30,
       child: "Civil | Sem-2".text.color(context.primaryColor).center.xl3.make(),
     );
+  }
+}
+
+class MyIcon extends StatelessWidget {
+  const MyIcon({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Icon(Icons.download).iconSize(context.isMobile? 30 :40).iconColor(context.canvasColor);
   }
 }
