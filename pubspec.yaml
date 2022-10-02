@@ -45,6 +45,7 @@ dependencies:
 flutter_icons:
   android: true
   ios: true
+  web: true
   image_path: "/Users/rangolivision/Desktop/code/final/khudkibook/assets/img/bg.png"
 
 dev_dependencies:
@@ -64,12 +65,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - /Users/rangolivision/Desktop/code/final/khudkibook/assets/img/
-    # - /Users/rangolivision/Desktop/code/final/khudkibook/assets/files/
-    # - /Users/rangolivision/Desktop/code/final/khudkibook/assets/files/it/
-    # - /Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cmp/
-    # - /Users/rangolivision/Desktop/code/final/khudkibook/assets/files/el/
-    # - /Users/rangolivision/Desktop/code/final/khudkibook/assets/files/me/
-    # - /Users/rangolivision/Desktop/code/final/khudkibook/assets/files/cv/
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
   # For details regarding adding assets from package dependencies, see
