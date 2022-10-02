@@ -6,10 +6,10 @@ class Cv1Model {
     Cv1items(
         id: 8,
         name: "Mathematics",
-        desc: "Computer|I.T",
+        desc: "All Branch",
         size: "1mb",
         sem: "Sem-1",
-        durl: "https://drive.google.com/uc?export=download&id=",
+        durl: "0",
         surl:
             "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
         lpurl:
@@ -23,7 +23,7 @@ class Cv1Model {
         size: "10mb",
         sem: "Sem-1",
         durl:
-            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "0",
         surl:
             "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
         lpurl:

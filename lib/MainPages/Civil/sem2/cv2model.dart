@@ -14,7 +14,7 @@ class Cv2Model {
             lpurl: "https://drive.google.com/uc?export=download&id=1crZfwQVi9aLDu0D84eEtxyKyKcjgwS4S",
             purl: "https://drive.google.com/uc?export=download&id=",
             image: "https://neo2708.github.io/pic.github.io/005.png"),
-            Cv2items(
+    Cv2items(
             id: 24,
             name: "Applied Chemistry",
             desc: "Civil ",
@@ -25,39 +25,39 @@ class Cv2Model {
             lpurl: "https://drive.google.com/uc?export=download&id=1iU1TOpYB_sbQ0flY5FgQ_kYyzo4O6rWY",
             purl: "https://drive.google.com/uc?export=download&id=",
             image: "https://neo2708.github.io/pic.github.io/024.png"),
-            Cv2items(
+    Cv2items(
               
             id: 25,
             name: "Applied Mathematics",
             desc: "Civil | Mechanical",
             size: "10mb",
             sem: "Sem-2",
-            durl: "https://drive.google.com/uc?export=download&id=",
-            surl: "https://drive.google.com/uc?export=download&id=",
-            lpurl: "https://drive.google.com/uc?export=download&id=",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
+            surl: "0",
+            lpurl:"0",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/025.png"),
-            Cv2items(
+    Cv2items(
             id: 26,
             name: "Engineering Mechanics",
             desc: "Civil | Mechanical",
             size: "10mb",
             sem: "Sem-2",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1IOP4pgSIZFlRlF6o1lp3t9R3p6z4iPJj",
             lpurl: "https://drive.google.com/uc?export=download&id=1z2yEpTyx-O9_yir74pQNwlFQY7K42c6s",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/026.png",),
-            Cv2items(
+    Cv2items(
             id: 27,
             name: "Civil Engineering Drawing",
             desc: "Civil ",
             size: "10mb",
             sem: "Sem-2",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1XQQCI-4yfJt0alsZaj-OHHDzVopAFi2w/",
             lpurl: "https://drive.google.com/uc?export=download&id=19rDQrOE1w-LeH7QWxbFC0M8u6DFTbFJN",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/027.png")
   ];
 }

@@ -6,15 +6,15 @@ class Cmp1Model {
     Cmp1items(
      id: 8,
         name: "Mathematics",
-        desc: "Computer|I.T",
+        desc: "All Branch",
         size: "1mb",
         sem: "Sem-1",
-        durl: "https://drive.google.com/uc?export=download&id=",
+        durl: "0",
         surl:
             "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
         lpurl:
             "https://drive.google.com/uc?export=download&id=1KmhMdlKGFQdER6JRijvp3Cpb11g70atU",
-        purl: "https://drive.google.com/uc?export=download&id=",
+        purl: "0",
         image: "https://neo2708.github.io/pic.github.io/008.png"),
          Cmp1items(
         id: 14,
@@ -23,12 +23,12 @@ class Cmp1Model {
         size: "10mb",
         sem: "Sem-1",
         durl:
-            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "0",
         surl:
             "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
         lpurl:
             "https://drive.google.com/uc?export=download&id=1zAotD83vv-DYvYdXrPESa9-qB9Aw_nnu",
-        purl: "https://drive.google.com/uc?export=download&id=",
+        purl: "0",
         image: "https://neo2708.github.io/pic.github.io/014.png"),
         Cmp1items(
           
@@ -37,10 +37,10 @@ class Cmp1Model {
             desc: "Computer",
             size: "10mb",
             sem: "Sem-1",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1YJOdjFDQIWum4ta1LFbJ-2glJ_VmqK4d",
             lpurl: "https://drive.google.com/uc?export=download&id=1Xq75NxoFqf_VNMuaYIryxK4QRy5sZqbm",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/002.png"),
             Cmp1items(
             id: 18,
@@ -48,10 +48,10 @@ class Cmp1Model {
             desc: "Computer ",
             size: "10mb",
             sem: "Sem-1",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1TgDIb3zXDdlK5-h_cKNPE8jC-uJxxEF7",
             lpurl: "https://drive.google.com/uc?export=download&id=17ep_AMwRRvQ7E0S8M83ftBaCSMaJHZWk",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/018.png"),
             Cmp1items(
             id: 5,
@@ -62,7 +62,7 @@ class Cmp1Model {
             durl: "https://drive.google.com/uc?export=download&id=19mG9PrcAhBF_V7PErUq_l3aMNtlvDdyk",
             surl: "https://drive.google.com/uc?export=download&id=1gFh42jzIkzL4C3snjupJA1ylxCI5OTp0",
             lpurl: "https://drive.google.com/uc?export=download&id=1Td0cEXGFMpQT97mkauauyE2yBhwG926n",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/005.png")
   ];
 }

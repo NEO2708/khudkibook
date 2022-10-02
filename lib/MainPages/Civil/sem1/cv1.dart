@@ -147,7 +147,7 @@ class _MyBooksState extends State<MyBooks> {
                 ElevatedButton(
                         style: ButtonStyle(),
                         onPressed: ((() {
-                          validator(widget, context);
+                          validator(widget.books.durl, context);
                         })),
                         child: MyIcon()
                         // "Download".text.color(Color.fromARGB(255, 30, 24, 16)).bold.xl2.make()

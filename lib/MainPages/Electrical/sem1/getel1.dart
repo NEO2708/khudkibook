@@ -80,7 +80,7 @@ class _GetIt1BooksState extends State<GetEl1Books> {
                             // Full-Book Btn
                             ElevatedButton(
                                     onPressed: ((() {
-                                      validator(widget, context);
+                                      validator(widget.books.durl, context);
                                     })),
                                     child: BookText())
                                 .h(40)
@@ -92,7 +92,7 @@ class _GetIt1BooksState extends State<GetEl1Books> {
                             // syllabus btn
                             ElevatedButton(
                                     onPressed: ((() {
-                                      validator(widget, context);
+                                      validator(widget.books.surl, context);
                                     })),
                                     child: MySyllabus())
                                 .h(40)
@@ -107,7 +107,7 @@ class _GetIt1BooksState extends State<GetEl1Books> {
                             // Last Year Paper btn
                             ElevatedButton(
                                     onPressed: ((() {
-                                      validator(widget, context);
+                                      validator(widget.books.lpurl, context);
                                     })),
                                     child: lsm())
                                 .h(40)
@@ -174,7 +174,7 @@ class _GetIt1BooksState extends State<GetEl1Books> {
                             // Book btn
                             ElevatedButton(
                                     onPressed: (() {
-                                      validator(widget, context);
+                                      validator(widget.books.durl, context);
                                     }),
                                     child: BookText())
                                 .h(40)
@@ -186,7 +186,7 @@ class _GetIt1BooksState extends State<GetEl1Books> {
                             // Syllabus
                             ElevatedButton(
                                     onPressed: (() {
-                                      validator(widget, context);
+                                      validator(widget.books.surl, context);
                                     }),
                                     child: MySyllabus())
                                 .h(40)
@@ -202,7 +202,7 @@ class _GetIt1BooksState extends State<GetEl1Books> {
                             // Last Year Paper btn
                             ElevatedButton(
                               onPressed: ((() {
-                                validator(widget, context);
+                                validator(widget.books.lpurl, context);
                               })),
                               child: lsm()
                             ).h(40).w40(context),

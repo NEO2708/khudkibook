@@ -80,7 +80,7 @@ class _GetMe2BooksState extends State<GetMe2Books> {
                             // Full-Book Btn
                             ElevatedButton(
                                     onPressed: ((() {
-                                      validator(widget, context);
+                                      validator(widget.books.durl, context);
                                     })),
                                     child: BookText())
                                 .h(40)
@@ -92,7 +92,7 @@ class _GetMe2BooksState extends State<GetMe2Books> {
                             // syllabus btn
                             ElevatedButton(
                                     onPressed: ((() {
-                                      validator(widget, context);
+                                      validator(widget.books.surl, context);
                                     })),
                                     child: MySyllabus())
                                 .h(40)
@@ -107,7 +107,7 @@ class _GetMe2BooksState extends State<GetMe2Books> {
                             // Last Year Paper btn
                             ElevatedButton(
                                     onPressed: ((() {
-                                      validator(widget, context);
+                                      validator(widget.books.lpurl, context);
                                     })),
                                     child: lsm())
                                 .h(40)
@@ -174,7 +174,7 @@ class _GetMe2BooksState extends State<GetMe2Books> {
                             // Book btn
                             ElevatedButton(
                                     onPressed: (() {
-                                      validator(widget, context);
+                                      validator(widget.books.durl, context);
                                     }),
                                     child: BookText())
                                 .h(40)
@@ -186,7 +186,7 @@ class _GetMe2BooksState extends State<GetMe2Books> {
                             // Syllabus
                             ElevatedButton(
                                     onPressed: (() {
-                                      validator(widget, context);
+                                      validator(widget.books.surl, context);
                                     }),
                                     child: MySyllabus())
                                 .h(40)
@@ -202,7 +202,7 @@ class _GetMe2BooksState extends State<GetMe2Books> {
                             // Last Year Paper btn
                             ElevatedButton(
                               onPressed: ((() {
-                                validator(widget, context);
+                                validator(widget.books.lpurl, context);
                               })),
                               child: lsm()
                             ).h(40).w40(context),

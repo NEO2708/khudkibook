@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 validator(widget, context) {
-  if (widget.books.durl == "0") {
+  if (widget == "0") {
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       duration: const Duration(seconds: 1),
@@ -12,7 +12,7 @@ validator(widget, context) {
     ));
   } else {
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
-    downloadfile(widget.books.durl);
+    downloadfile(widget);
 
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(
         duration: const Duration(seconds: 1),

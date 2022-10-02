@@ -9,12 +9,12 @@ class Me1Model {
         desc: "All Branch",
         size: "1mb",
         sem: "Sem-1",
-        durl: "https://drive.google.com/uc?export=download&id=",
+        durl: "0",
         surl:
             "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
         lpurl:
             "https://drive.google.com/uc?export=download&id=1KmhMdlKGFQdER6JRijvp3Cpb11g70atU",
-        purl: "https://drive.google.com/uc?export=download&id=",
+        purl: "0",
         image: "https://neo2708.github.io/pic.github.io/008.png"),
     Me1items(
         id: 14,
@@ -28,7 +28,7 @@ class Me1Model {
             "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
         lpurl:
             "https://drive.google.com/uc?export=download&id=1zAotD83vv-DYvYdXrPESa9-qB9Aw_nnu",
-        purl: "https://drive.google.com/uc?export=download&id=",
+        purl: "0",
         image: "https://neo2708.github.io/pic.github.io/014.png"),
     Me1items(
         id: 16,
@@ -40,8 +40,8 @@ class Me1Model {
             "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
         surl:
             "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
-        lpurl: "https://drive.google.com/uc?export=download&id=",
-        purl: "https://drive.google.com/uc?export=download&id=",
+        lpurl: "0",
+        purl: "0",
         image: "https://neo2708.github.io/pic.github.io/016.png"),
     Me1items(
         id: 3,
@@ -53,8 +53,8 @@ class Me1Model {
             "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
         surl:
             "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
-        lpurl: "https://drive.google.com/uc?export=download&id=",
-        purl: "https://drive.google.com/uc?export=download&id=",
+        lpurl: "0",
+        purl: "0",
         image: "https://neo2708.github.io/pic.github.io/003.png")
   ];
 }

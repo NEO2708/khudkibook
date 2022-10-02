@@ -8,22 +8,22 @@ class El2Model {
             name: "Environment and Sustainability",
             desc: "All branch",
             size: "10mb",
-            sem: "2nd-Sem",
+            sem: "Sem-2",
             durl: "https://drive.google.com/uc?export=download&id=19mG9PrcAhBF_V7PErUq_l3aMNtlvDdyk",
             surl: "https://drive.google.com/uc?export=download&id=1gFh42jzIkzL4C3snjupJA1ylxCI5OTp0",
             lpurl: "https://drive.google.com/uc?export=download&id=1crZfwQVi9aLDu0D84eEtxyKyKcjgwS4S",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/005.png"),
             El2items(
             id: 22,
             name: "Engineering Mathematics",
             desc: "Computer | I.T | Electrical ",
             size: "10mb",
-            sem: "Sem-1",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            sem: "Sem-2",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1PYPTgJITH-65K29Oyz7CSY0lY_2wV2mN",
             lpurl: "https://drive.google.com/uc?export=download&id=1JC8fR0liC9WTFaetIltBzV9Dq1ytjIwD",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/022.png"),
              
               El2items(
@@ -32,10 +32,10 @@ class El2Model {
             desc: "I.t | Computer | Electrical",
             size: "10mb",
             sem: "Sem-2",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1W0noHZIqpJPotqHlItFUNMEBVs8lLVq4",
             lpurl: "https://drive.google.com/uc?export=download&id=1wWRidccr_V4a7J_Mn_uYMUai38_SnQ7a",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/019.png"),
             El2items(
             id: 21,
@@ -45,8 +45,8 @@ class El2Model {
             sem: "Sem-2",
             durl: "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
             surl: "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
-            lpurl: "https://drive.google.com/uc?export=download&id=",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            lpurl: "0",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/021.png"),
             El2items(
             id: 23,
@@ -56,8 +56,8 @@ class El2Model {
             sem: "Sem-2",
             durl: "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
             surl: "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
-            lpurl: "https://drive.google.com/uc?export=download&id=",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            lpurl: "0",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/na.webp")
   ];
 }

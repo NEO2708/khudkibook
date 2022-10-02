@@ -6,15 +6,15 @@ class El1Model {
     El1items(
       id: 8,
         name: "Mathematics",
-        desc: "Computer|I.T",
+        desc: "All Branch",
         size: "1mb",
         sem: "Sem-1",
-        durl: "https://drive.google.com/uc?export=download&id=",
+        durl: "0",
         surl:
             "https://drive.google.com/uc?export=download&id=1NBi1aZWsMv2gDKQL9JuWhLLGnC9So5nX",
         lpurl:
             "https://drive.google.com/uc?export=download&id=1KmhMdlKGFQdER6JRijvp3Cpb11g70atU",
-        purl: "https://drive.google.com/uc?export=download&id=",
+        purl: "0",
         image: "https://neo2708.github.io/pic.github.io/008.png"),
         El1items(
         id: 14,
@@ -28,7 +28,7 @@ class El1Model {
             "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
         lpurl:
             "https://drive.google.com/uc?export=download&id=1zAotD83vv-DYvYdXrPESa9-qB9Aw_nnu",
-        purl: "https://drive.google.com/uc?export=download&id=",
+        purl: "0",
         image: "https://neo2708.github.io/pic.github.io/014.png"),
         El1items(
             id: 20,
@@ -36,10 +36,10 @@ class El1Model {
             desc: "Electrical",
             size: "10mb",
             sem: "Sem-1",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1MPRHsKLDa07obiOvRSRsV_oKuwTAljyu",
             lpurl: "https://drive.google.com/uc?export=download&id=1Or5PN5Bpm1CVaJIQBqmhVlsKvlW6M3Vc",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/020.png"),
             El1items(
             id: 15,
@@ -47,10 +47,10 @@ class El1Model {
             desc: "Electrical",
             size: "10mb",
             sem: "Sem-1 & 2",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=10T6oqf985UpnU4fyS5jeHoQK8j2G7ou7",
             lpurl: "https://drive.google.com/uc?export=download&id=1pBtjcsATXq9Ba-LdSPrcEjZGrSHsmqDE",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/015.png")
   ];
 }

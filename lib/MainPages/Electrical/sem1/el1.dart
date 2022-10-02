@@ -28,24 +28,10 @@ class _El1HomePageState extends State<El1HomePage> {
   @override
   void initState() {
     super.initState();
-    // loadData();
-  }
-
-  loadData() async {
-    final dataJson = await rootBundle.loadString(
-        "/Users/rangolivision/Desktop/code/final/khudkibook/assets/files/el/el1.json");
-    final decodData = jsonDecode(dataJson);
-
-    var productData = decodData["el1prododucts"];
-    El1Model.product = List.from(productData)
-        .map<El1items>((It) => El1items.fromMap(It))
-        .toList();
-    setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
-    // return Consumer(builder: (context, ThemeModel themeNotifier, child) {
 
     return Scaffold(
       appBar: AppBar(
@@ -160,7 +146,7 @@ class _MyBooksState extends State<MyBooks> {
                 ElevatedButton(
                         style: ButtonStyle(),
                         onPressed: (() {
-                          validator(widget, context);
+                          validator(widget.books.durl, context);
                         }),
                         child: MyIcon())
                     .wPCT(

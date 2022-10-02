@@ -150,7 +150,7 @@ class _MyBooksState extends State<MyBooks> {
                 ElevatedButton(
                         style: ButtonStyle(),
                         onPressed: ((() {
-                          validator(widget, context);
+                          validator(widget.books.durl, context);
                         })),
                         child: MyIcon()
                         )

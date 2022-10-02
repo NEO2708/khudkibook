@@ -8,11 +8,11 @@ class Me2Model {
             name: "Environment and Sustainability",
             desc: "All branch",
             size: "10mb",
-            sem: "2nd-Sem",
+            sem: "Sem-2",
             durl: "https://drive.google.com/uc?export=download&id=19mG9PrcAhBF_V7PErUq_l3aMNtlvDdyk",
             surl: "https://drive.google.com/uc?export=download&id=1gFh42jzIkzL4C3snjupJA1ylxCI5OTp0",
             lpurl: "https://drive.google.com/uc?export=download&id=1crZfwQVi9aLDu0D84eEtxyKyKcjgwS4S",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/005.png"),
             Me2items(
               
@@ -21,10 +21,10 @@ class Me2Model {
             desc: "Civil | Mechanical",
             size: "10mb",
             sem: "Sem-2",
-            durl: "https://drive.google.com/uc?export=download&id=",
-            surl: "https://drive.google.com/uc?export=download&id=",
-            lpurl: "https://drive.google.com/uc?export=download&id=",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
+            surl: "0",
+            lpurl: "0",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/025.png"),
             Me2items(
             id: 26,
@@ -32,10 +32,10 @@ class Me2Model {
             desc: "Civil | Mechanical",
             size: "10mb",
             sem: "Sem-2",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1IOP4pgSIZFlRlF6o1lp3t9R3p6z4iPJj",
             lpurl: "https://drive.google.com/uc?export=download&id=1z2yEpTyx-O9_yir74pQNwlFQY7K42c6s",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/026.png",),
             Me2items(
             id: 28,
@@ -44,9 +44,9 @@ class Me2Model {
             size: "10mb",
             sem: "Sem-2",
             durl: "https://drive.google.com/uc?export=download&id=1kiq9wzhnb3LOEk0NCj5hBL9_LcuNK97p",
-            surl: "https://drive.google.com/uc?export=download&id=",
+            surl: "0",
             lpurl: "https://drive.google.com/uc?export=download&id=1NBYupLWZCcJWGiW2QWIm7Us2815VcDBr",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/028.png")
   ];
 }
