@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:khudkibook/It/sem1/it1.dart';
+import 'package:khudkibook/MainPages/It/sem1/it1.dart';
 import 'package:khudkibook/dropdown.dart';
 import 'package:khudkibook/pages/login.dart';
 import 'package:khudkibook/pages/profil.dart';

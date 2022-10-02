@@ -6,8 +6,8 @@ import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:khudkibook/MainPages/Civil/sem1/cv1model.dart';
 import 'package:khudkibook/MainPages/Civil/sem2/cv2model.dart';
-import 'package:khudkibook/MainPages/Electrical/sem2/el2model.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
+import 'package:khudkibook/MainPages/It/sem2/it2model.dart';
 import 'package:khudkibook/models/app.dart';
 
 // ignore: depend_on_referenced_packages
@@ -15,17 +15,17 @@ import 'package:velocity_x/velocity_x.dart';
 
 import '../../../widget/appimage.dart';
 
-class GetEl2Books extends StatefulWidget {
-  final El2items books;
+class GetIt2Books extends StatefulWidget {
+  final It2items books;
 
   // ignore: unnecessary_null_comparison
-  const GetEl2Books({super.key, required this.books}) : assert(books != null);
+  const GetIt2Books({super.key, required this.books}) : assert(books != null);
 
   @override
-  State<GetEl2Books> createState() => _GetEl2BooksState();
+  State<GetIt2Books> createState() => _GetIt2BooksState();
 }
 
-class _GetEl2BooksState extends State<GetEl2Books> {
+class _GetIt2BooksState extends State<GetIt2Books> {
   @override
   Widget build(BuildContext context) {
     return context.isMobile
@@ -403,12 +403,4 @@ downloadfile(url) {
   AnchorElement anchorElement = AnchorElement(href: url);
   anchorElement.download = "";
   anchorElement.click();
-}
-class FullBook extends StatelessWidget {
-  const FullBook({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
 }
