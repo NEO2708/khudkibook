@@ -31,15 +31,15 @@ class _DropDownPageState extends State<DropDownPage> {
   @override
   void initState() {
     super.initState();
+    subject.add({"id": 4, "label": "Civil:06"});
+    subject.add({"id": 2, "label": "Computer:07"});
+    subject.add({"id": 3, "label": "Electrical:09"});
     subject.add({"id": 1, "label": "Information Technology:16"});
-    subject.add({"id": 2, "label": "Computer:"});
-    subject.add({"id": 3, "label": "Electrical:"});
-    subject.add({"id": 4, "label": "Civil:"});
-    subject.add({"id": 5, "label": "Mechanical:"});
+    subject.add({"id": 5, "label": "Mechanical:19"});
     sem = [
       {"ID": 10, "NAME": "1"},
       {"ID": 20, "NAME": "2"},
-      {"ID": 30, "NAME": "3"},
+      {"ID": 30, "NAME": "3(N/A)"},
       {"ID": 40, "NAME": "4(N/A)"},
       {"ID": 50, "NAME": "5(N/A)"},
       {"ID": 60, "NAME": "6(N/A)"},
