@@ -110,13 +110,12 @@ class _DropDownPageState extends State<DropDownPage> {
                   // I.T
                   if (subjectId == "1") {
                     if (semId == "10") {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => It1HomePage(),
-                          ));
+                      na(context);
                     }
+
                     if (semId == "20") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -124,58 +123,30 @@ class _DropDownPageState extends State<DropDownPage> {
                           ));
                     }
                     if (semId == "30") {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: "Not Avilable Yet, Check Agin Later"
-                              .text
-                              .xl2
-                              .red500
-                              .make()));
+                      na(context);
                     }
                     if (semId == "40") {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: "Not Avilable Yet, Check Agin Later"
-                              .text
-                              .xl2
-                              .red500
-                              .make()));
+                      na(context);
                     }
                     if (semId == "50") {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: "Not Avilable Yet, Check Agin Later"
-                              .text
-                              .xl2
-                              .red500
-                              .make()));
+                      na(context);
                     }
                     if (semId == "60") {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: "Not Avilable Yet, Check Agin Later"
-                              .text
-                              .xl2
-                              .red500
-                              .make()));
+                      na(context);
                     }
                     if (semId == "70") {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: "Not Avilable Yet, Check Agin Later"
-                              .text
-                              .xl2
-                              .red500
-                              .make()));
+                      na(context);
                     }
-                    if (semId == "50") {
-                      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                          content: "Not Avilable Yet, Check Agin Later"
-                              .text
-                              .xl2
-                              .red500
-                              .make()));
+                    if (semId == "80") {
+                      na(context);
                     }
                   }
 
                   // Computer
                   if (subjectId == "2") {
                     if (semId == "10") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -183,42 +154,38 @@ class _DropDownPageState extends State<DropDownPage> {
                           ));
                     }
                     if (semId == "20") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => Cmp2HomePage(),
                           ));
                     }
-                        if (semId == "30") {
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));
-                        }
-                        if (semId == "40") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "50") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "60") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "70") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "50") {ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
+                    if (semId == "30") {
+                      na(context);
+                    }
+                    if (semId == "40") {
+                      na(context);
+                    }
+                    if (semId == "50") {
+                      na(context);
+                    }
+                    if (semId == "60") {
+                      na(context);
+                    }
+                    if (semId == "70") {
+                      na(context);
+                    }
+                    if (semId == "80") {
+                      na(context);
+                    }
                   }
                   // Electrical
                   if (subjectId == "3") {
                     if (semId == "10") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -226,39 +193,38 @@ class _DropDownPageState extends State<DropDownPage> {
                           ));
                     }
                     if (semId == "20") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => El2HomePage(),
                           ));
                     }
-                        if (semId == "30") {
-                         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));
-                        }
-                        if (semId == "40") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "60") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "70") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-
+                    if (semId == "30") {
+                      na(context);
+                    }
+                    if (semId == "40") {
+                      na(context);
+                    }
+                    if (semId == "50") {
+                      na(context);
+                    }
+                    if (semId == "60") {
+                      na(context);
+                    }
+                    if (semId == "70") {
+                      na(context);
+                    }
+                    if (semId == "80") {
+                      na(context);
+                    }
                   }
                   // Civil
                   if (subjectId == "4") {
                     if (semId == "10") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -266,42 +232,38 @@ class _DropDownPageState extends State<DropDownPage> {
                           ));
                     }
                     if (semId == "20") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => Cv2HomePage(),
                           ));
                     }
-                        if (semId == "30") {
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));
-                        }
-                        if (semId == "40") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "60") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "70") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
+                    if (semId == "30") {
+                      na(context);
+                    }
+                    if (semId == "40") {
+                      na(context);
+                    }
+                    if (semId == "50") {
+                      na(context);
+                    }
+                    if (semId == "60") {
+                      na(context);
+                    }
+                    if (semId == "70") {
+                      na(context);
+                    }
+                    if (semId == "80") {
+                      na(context);
+                    }
                   }
                   // Mechanical
                   if (subjectId == "5") {
                     if (semId == "10") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -309,40 +271,33 @@ class _DropDownPageState extends State<DropDownPage> {
                           ));
                     }
                     if (semId == "20") {
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                             builder: (context) => Me2HomePage(),
                           ));
                     }
-                        if (semId == "30") {
-                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));
-                        }
-                        if (semId == "40") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "60") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "70") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                        if (semId == "50") { ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                        content: "Not Avilable Yet, Check Agin Later"
-                            .text.xl2.red500
-                            .make()));}
-                      }
-                
+                    if (semId == "30") {
+                      na(context);
+                    }
+                    if (semId == "40") {
+                      na(context);
+                    }
+                    if (semId == "50") {
+                      na(context);
+                    }
+                    if (semId == "60") {
+                      na(context);
+                    }
+                    if (semId == "70") {
+                      na(context);
+                    }
+                    if (semId == "80") {
+                      na(context);
+                    }
+                  }
                 },
                 child: Container(
                   height: 50,
@@ -360,3 +315,9 @@ class _DropDownPageState extends State<DropDownPage> {
 }
 
 final ThemeData onlyLight = ThemeData(brightness: Brightness.light);
+na(context) {
+  ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
+  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+      content: "Not Avilable Yet, Check Agin Later".text.xl2.red500.make()));
+}
