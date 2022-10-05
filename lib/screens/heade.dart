@@ -11,7 +11,13 @@ class MyHeadIcon extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        context.isMobile ? Image.network(imgu).w(50) : Image.network(imgu).w(70)
+        context.isMobile ? Hero(
+              tag: "hello",
+
+          child: Image.network(imgu).w(50)) : Hero(
+              tag: "hello",
+
+            child: Image.network(imgu).w(70))
       ],
     );
   }

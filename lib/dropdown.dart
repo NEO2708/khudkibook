@@ -55,18 +55,21 @@ class _DropDownPageState extends State<DropDownPage> {
       child: SafeArea(
           child: Scaffold(
 
-              // appBar: AppBar(
-              //   title: "Select All Fields".text.xl3.color(context.primaryColor).make(),
-              //   backgroundColor: Colors.transparent,
-              //   elevation: 0.0,
-              // ),
+              appBar: AppBar(
+                title: "Select All Fields".text.xl3.color(Colors.black).make(),
+                backgroundColor: Colors.white              ,
+                elevation: 0.0,
+              ),
               body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Center(
           child: Column(children: [
-            Image.network(
-                    "https://cdn2.iconfinder.com/data/icons/diwali-2027/32/shree_sree_hindu_gita_book_holy_religion-512.png")
-                .w(300),
+            Hero(
+              tag: "hello",
+              child: Image.network(
+                      "https://cdn2.iconfinder.com/data/icons/diwali-2027/32/shree_sree_hindu_gita_book_holy_religion-512.png")
+                  .w(300),
+            ),
             FormHelper.dropDownWidgetWithLabel(
               context,
               "Branch*",
@@ -110,7 +113,13 @@ class _DropDownPageState extends State<DropDownPage> {
                   // I.T
                   if (subjectId == "1") {
                     if (semId == "10") {
-                      na(context);
+                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
+
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => It1HomePage(),
+                          ));
                     }
 
                     if (semId == "20") {
