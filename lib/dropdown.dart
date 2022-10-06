@@ -328,5 +328,5 @@ na(context) {
   ScaffoldMessenger.of(context).hideCurrentSnackBar();
 
   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-      content: "Not Avilable Yet, Check Agin Later".text.xl2.red500.make()));
+      content: "Not Avilable Yet, Check Again Later".text.xl2.red500.make()));
 }

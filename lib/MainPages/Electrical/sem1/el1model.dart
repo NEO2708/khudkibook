@@ -23,7 +23,7 @@ class El1Model {
         size: "10mb",
         sem: "Sem-1",
         durl:
-            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "0",
         surl:
             "https://drive.google.com/uc?export=download&id=1Dg0oOqRSiS2aNw28hQng_ii_GyFTtGQa",
         lpurl:

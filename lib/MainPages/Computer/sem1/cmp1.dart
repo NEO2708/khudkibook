@@ -149,7 +149,6 @@ class _MyBooksState extends State<MyBooks> {
                         context: context, widthPCT: context.isMobile ? 28 : 20)
                     .hPCT(
                         context: context, heightPCT: context.isMobile ? 4 : 4),
-                widget.books.size.text.underline.blue500.bold.xl.make()
               ],
             ).pOnly(right: 10)
           ],
