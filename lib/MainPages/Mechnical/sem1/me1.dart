@@ -11,7 +11,7 @@ import 'package:khudkibook/MainPages/Civil/sem1/getcv1.dart';
 import 'package:khudkibook/MainPages/It/sem1/getIt1.dart';
 import 'package:khudkibook/MainPages/It/sem1/it1model.dart';
 import 'package:khudkibook/dropdown.dart';
-import 'package:khudkibook/pages/tm.dart';
+import 'package:khudkibook/pages2/tm.dart';
 import 'package:khudkibook/screens/heade.dart';
 import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';

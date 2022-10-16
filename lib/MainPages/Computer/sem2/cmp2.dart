@@ -9,7 +9,7 @@ import 'package:flutter/services.dart';
 import 'package:khudkibook/MainPages/Computer/sem2/cmp2model.dart';
 import 'package:khudkibook/MainPages/Computer/sem2/getcmp2.dart';
 import 'package:khudkibook/dropdown.dart';
-import 'package:khudkibook/pages/tm.dart';
+import 'package:khudkibook/pages2/tm.dart';
 import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';

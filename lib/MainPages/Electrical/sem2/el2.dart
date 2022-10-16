@@ -11,7 +11,7 @@ import 'package:khudkibook/MainPages/Electrical/sem1/getel1.dart';
 import 'package:khudkibook/MainPages/Electrical/sem2/el2model.dart';
 import 'package:khudkibook/MainPages/Electrical/sem2/getel2.dart';
 import 'package:khudkibook/dropdown.dart';
-import 'package:khudkibook/pages/tm.dart';
+import 'package:khudkibook/pages2/tm.dart';
 import 'package:khudkibook/utils/routes.dart';
 import 'package:khudkibook/widget/appimage.dart';
 import 'package:khudkibook/widget/drawer.dart';
