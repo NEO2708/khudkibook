@@ -20,10 +20,10 @@ class Cv2Model {
             desc: "Civil ",
             size: "10mb",
             sem: "Sem-2",
-            durl: "https://drive.google.com/uc?export=download&id=",
+            durl: "0",
             surl: "https://drive.google.com/uc?export=download&id=1p_Ap18rixotK3H1iRxZptoxolV95usxm",
             lpurl: "https://drive.google.com/uc?export=download&id=1iU1TOpYB_sbQ0flY5FgQ_kYyzo4O6rWY",
-            purl: "https://drive.google.com/uc?export=download&id=",
+            purl: "0",
             image: "https://neo2708.github.io/pic.github.io/024.png"),
     Cv2items(
               

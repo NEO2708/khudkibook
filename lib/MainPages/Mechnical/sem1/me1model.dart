@@ -37,9 +37,9 @@ class Me1Model {
         size: "10mb",
         sem: "Sem-1",
         durl:
-            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "0",
         surl:
-            "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "0",
         lpurl: "0",
         purl: "0",
         image: "https://neo2708.github.io/pic.github.io/016.png"),
@@ -50,9 +50,9 @@ class Me1Model {
         size: "10mb",
         sem: "Sem-1",
         durl:
-            "https://drive.google.com/uc?export=download&id=1HkOUzKyz7bliRhnrsY_gjHHUm_LtWRNo",
+            "0",
         surl:
-            "https://drive.google.com/uc?export=download&id=1Dh9C0ytEr2icrx8crlm2lLiv1YqH3p_O",
+            "0",
         lpurl: "0",
         purl: "0",
         image: "https://neo2708.github.io/pic.github.io/003.png")
